@@ -1,0 +1,91 @@
+//
+//  ContactUsController.m
+//  Malibu
+//
+//  Created by Richard McClellan on 6/26/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "ContactUsController.h"
+
+
+@implementation ContactUsController
+
+@synthesize contactLinks = _contactLinks;
+@synthesize websiteButton = _websiteButton;
+
+
+-(IBAction)linkClick:(id)sender
+{
+	//Check for network connectivity before trying to load any media
+	[[Reachability sharedReachability] setHostName:@"www.apple.com"];
+	NetworkStatus networkConnectionStatus = [[Reachability sharedReachability] remoteHostStatus];
+	if(networkConnectionStatus == NotReachable) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kNoConnectivityErrorTitle message:kNoConnectivityErrorDescription delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+	else {
+		NSLog(@"About to open external app with url: %@", [self.contactLinks objectAtIndex:[sender tag]]);
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[self.contactLinks objectAtIndex:[sender tag]]]];
+	}
+}
+
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	NSLog(@"ContactUsController viewDidLoad");
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:@"SELECT websiteUrl FROM Contact"];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		NSLog(@"found contact info in database");
+		NSString *website = [[NSString alloc] initWithCString:(char *)sqlite3_column_text(sqlStatement, 0)];
+		[self.websiteButton setTitle:website forState:UIControlStateNormal];
+		self.contactLinks = [NSArray arrayWithObjects:
+						[@"http://" stringByAppendingString: website], 
+						nil];
+	}
+	[self.contactLinks retain];
+	self.view.backgroundColor = [UIColor clearColor];
+    [super viewDidLoad];
+}
+
+
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+	[self.contactLinks release];
+    [super dealloc];
+}
+
+@end

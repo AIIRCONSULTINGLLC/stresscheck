@@ -1,0 +1,250 @@
+//
+//  DetailResponseViewController.m
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/30/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "DetailedResponseViewController.h"
+
+
+@implementation DetailedResponseViewController
+
+@synthesize domainNames = _domainNames;
+@synthesize domainScores = _domainScores;
+@synthesize responseLabel = _responseLabel;
+@synthesize scrollView = _scrollView;
+@synthesize detailPrefix = _detailPrefix;
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	NSLog(@"Loading detail response view");
+    [super viewDidLoad];
+	self.scrollView.contentSize = CGSizeMake(320,900);
+	//PULL SCORE DATA FROM DATABASE
+	NSString *sql = @"SELECT  Domains.name, Questions.domainId, SUM(Answers.pointValue) FROM Questions ";
+	sql = [sql stringByAppendingString:@"JOIN QuestionAnswer ON QuestionAnswer.questionId = Questions.id "];
+	sql = [sql stringByAppendingString:@"JOIN Answers ON QuestionAnswer.answerId = Answers.id "];
+	sql = [sql stringByAppendingString:@"JOIN Domains ON Domains.id = Questions.domainId "];
+	sql = [sql stringByAppendingString:@"WHERE Questions.questionState = QuestionAnswer.displayOrder "];
+	sql = [sql stringByAppendingString:@"GROUP BY Questions.domainId"];
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	
+	// The responses in the DetailedResponses table are arranged so that the binary representation of the id indicates which domains are included.
+	// To figure out the id of the detailed response to be displayed, we will pack together as many bits as there are domains, such that
+	// bit 0 is on if the domain 1 point value sum is the highest or tied with the highest,
+	// bit 1 is on if the domain 2 point value sum is the highest or tied with the highest,
+	// etc.  The resulting integer, or the specificResponseId can be used to directly look up the appropriate response.
+	unsigned int specificResponseId = 0;
+	int maxScore = 0;
+	self.domainNames = [[NSMutableArray alloc] init];
+	self.domainScores = [[NSMutableArray alloc] init];
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		[self.domainNames addObject:[[NSString alloc] initWithCString:(char *)sqlite3_column_text (sqlStatement, 0)]];
+		int domainId = sqlite3_column_int (sqlStatement, 1);
+		int score = sqlite3_column_int (sqlStatement, 2);
+		NSLog(@"score: %d  domainId: %d", score, domainId);
+		if(score > maxScore) {
+			maxScore = score;
+			specificResponseId = (1 << (domainId - 1));
+		}
+		else if(score == maxScore) {
+			specificResponseId |= (1 << (domainId - 1));
+		}
+		[self.domainScores addObject:[[NSNumber alloc] initWithInt:score]];
+	}
+	
+	query = [[SQLQuery alloc] initWithQuery:[NSString stringWithFormat:@"SELECT responseText FROM SpecificResponses WHERE id=%d", specificResponseId]];
+	NSString *detailedResponseText = @"no results found";
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		detailedResponseText = [[NSString alloc] initWithCString:(char *)sqlite3_column_text(sqlStatement, 0)];
+	}
+	detailedResponseText = [self.detailPrefix stringByAppendingString:detailedResponseText];
+	
+	//ADD THE BAR GRAPH
+	CPTheme *theme = [CPTheme themeNamed:kCPOfficeHarmonyTheme];
+	CPXYGraph *barChart = (CPXYGraph *)[theme newGraph];
+	CPLayerHostingView *barChartView = [[CPLayerHostingView alloc] initWithFrame:CGRectMake(0,0,320,230)];
+	barChartView.hostedLayer = barChart;
+	
+	barChart.paddingLeft = 40.0;
+	barChart.paddingTop = 15.0;
+	barChart.paddingRight = 15.0;
+	barChart.paddingBottom = 80.0;
+	
+	barChart.plotArea.fill = [CPFill fillWithColor:[CPColor CPLightGray]];
+	
+	// Setup plot space
+	CPXYPlotSpace *plotSpace = (CPXYPlotSpace *)barChart.defaultPlotSpace;
+	plotSpace.xRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(4.0f)];
+	plotSpace.yRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(29.9f)];
+
+	CPLineStyle *majorLineStyle = [CPLineStyle lineStyle];
+    majorLineStyle.lineCap = kCGLineCapButt;
+    majorLineStyle.lineColor = [CPColor CPDarkPurple];
+    majorLineStyle.lineWidth = 2.0f;
+	
+	CPXYAxisSet *axisSet = (CPXYAxisSet *)barChart.axisSet;
+ 	axisSet.overlayLayerInsetX = 0.f;
+	axisSet.overlayLayerInsetY = 0.f;
+	
+	CPXYAxis *x = axisSet.xAxis;
+	x.axisLineStyle = majorLineStyle;
+
+	CPLineStyle *barBorderStyle = [CPLineStyle lineStyle];
+	barBorderStyle.lineWidth = 0.0f;
+	
+	CPXYAxis *y = axisSet.yAxis;
+	y.axisLineStyle = majorLineStyle;
+	
+	CPBarPlot *barPlot = [CPBarPlot tubularBarPlotWithColor:[CPColor blueColor] horizontalBars:NO];
+    barPlot.dataSource = self;
+    barPlot.baseValue = [NSDecimalNumber decimalNumberWithString:@"0"];
+    barPlot.barOffset = 1.8f;
+    barPlot.cornerRadius = 0.0f;
+	barPlot.barWidth = 20.0f;	 
+    barPlot.lineStyle = barBorderStyle;
+	[barChart addPlot:barPlot toPlotSpace:plotSpace];
+	
+	[self.scrollView addSubview:barChartView];
+/*
+	//ADD GRAPH TITLE LABEL
+	UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15,10, self.view.frame.size.width-30, 20)];
+	titleLabel.text = @"Detailed Results";
+	titleLabel.font = [titleLabel.font fontWithSize:14];
+	titleLabel.textAlignment = UITextAlignmentRight;
+	titleLabel.backgroundColor = [UIColor clearColor];
+	titleLabel.textColor = [UIColor OHDarkPurple];
+	[self.scrollView addSubview:titleLabel];
+	[titleLabel release];*/
+	
+	//ADD DOMAIN NAMES AND SCORE VALUES AND IMAGES FOR BAR BOTTOMS
+	int numDomains = [self.domainNames count];
+	for(int i=0; i<numDomains; ++i)
+	{
+		UILabel *domainLabel = [[UILabel alloc] initWithFrame:CGRectMake(25+i*266/numDomains, 175, 100, 266/numDomains)];
+		domainLabel.text = [self.domainNames objectAtIndex:i];
+		domainLabel.font = [UIFont boldSystemFontOfSize:14];
+		domainLabel.textAlignment = UITextAlignmentRight;
+		domainLabel.transform = CGAffineTransformRotate(self.view.transform, -M_PI/2);
+		domainLabel.backgroundColor = [UIColor clearColor];
+		domainLabel.textColor = [UIColor blackColor];
+		[self.scrollView addSubview:domainLabel];
+		[domainLabel release];
+		
+		UILabel *scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(56+i*266/numDomains, 15, 40, 20)];
+		scoreLabel.text = [[[self.domainScores objectAtIndex:i] stringValue] stringByAppendingString:@"/25"];
+		scoreLabel.font = [UIFont boldSystemFontOfSize:14];
+		scoreLabel.textAlignment = UITextAlignmentCenter;
+		scoreLabel.backgroundColor = [UIColor clearColor];
+		scoreLabel.textColor = [UIColor blackColor];
+		[self.scrollView addSubview:scoreLabel];
+		[scoreLabel release];
+	}
+
+	
+	//ADD A TEXTVIEW FOR THE RESPONSE
+	NSLog(@"specificResponseId: %d", specificResponseId);
+	NSLog(detailedResponseText);
+	UITextView *responseTextView = [[UITextView alloc] initWithFrame:CGRectMake(15, 260, 290, 630)];
+	responseTextView.text = detailedResponseText;
+	responseTextView.font = [UIFont fontWithName:@"Arial" size:16];
+	responseTextView.scrollEnabled = NO;
+	responseTextView.textAlignment = UITextAlignmentCenter;
+	responseTextView.backgroundColor = [UIColor clearColor];
+	responseTextView.textColor = [UIColor OHDarkPurple];
+	responseTextView.editable = NO;
+	[self.scrollView addSubview:responseTextView];
+	[responseTextView release];	
+}
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
+- (void)dealloc {
+	[self.domainNames release];
+	[self.domainScores release];
+	[self.responseLabel release];
+	[self.scrollView release];
+	[self.detailPrefix release];
+    [super dealloc];
+}
+
+-(IBAction) generalResponseButtonTouch:(id) sender
+{
+	NSLog(@"generalResponseButtonTouch");
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+-(IBAction) restartButtonTouch:(id)sender
+{
+	//Reset all the previously selected choices
+	NSString *sql = [NSString stringWithFormat:@"UPDATE Questions SET questionState=0"];
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil);
+	[query release];
+	
+	
+	[self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark CPBarPlotDataSource methods
+
+-(NSUInteger)numberOfRecordsForPlot:(CPPlot *)plot
+{
+	return [self.domainScores count];
+}
+
+-(NSNumber *)numberForPlot:(CPPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index
+{
+	return [self.domainScores objectAtIndex:index];
+}
+
+-(CPFill *)barFillForBarPlot:(CPBarPlot *)barPlot recordIndex:(NSUInteger)index
+{
+	NSArray *colors = [NSArray arrayWithObjects:
+					   [[CPFill alloc] initWithColor:[CPColor colorWithComponentRed:0.0/255.0 green:121.0/255.0 blue: 165.0/255.0 alpha:1.0]],
+					   [[CPFill alloc] initWithColor:[CPColor colorWithComponentRed:255.0/255.0 green:83.0/255.0 blue: 8.0/255.0 alpha:1.0]],
+					   [[CPFill alloc] initWithColor:[CPColor colorWithComponentRed:252.0/255.0 green:189.0/255.0 blue: 8.0/255.0 alpha:1.0]],
+					   [[CPFill alloc] initWithColor:[CPColor colorWithComponentRed:102.0/255.0 green:177.0/255.0 blue: 50.0/255.0 alpha:1.0]],
+					   nil];
+	return [colors objectAtIndex:index];
+	//return [[CPFill alloc] initWithColor:[CPColor CPDarkPurple]];
+}
+
+@end
+
+

@@ -1,0 +1,104 @@
+//
+//  OfficeHarmonyAppDelegate.m
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/23/09.
+//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//
+
+#import "OfficeHarmonyAppDelegate.h"
+#import "Beacon.h"
+
+@implementation OfficeHarmonyAppDelegate
+
+@synthesize window;
+@synthesize tabBarController;
+@synthesize backgroundColor;
+@synthesize scalingMode;
+@synthesize controlMode;
+
+// look for the database in the user's ~/Document directory;  if not found, copy
+// it there from the app bundle (this is necessary because apps (except for Apple's)
+// can't write to files in their bundles
+- (BOOL) initializeDatabase {
+	NSLog(@"initializeDatabase");
+	NSString *dbFilePath;
+	NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentFolderPath = [searchPaths objectAtIndex: 0];
+	dbFilePath = [documentFolderPath stringByAppendingPathComponent:kDatabaseName];
+	
+	if (! [[NSFileManager defaultManager] fileExistsAtPath: dbFilePath]) {
+		// didn't find db, need to copy
+		NSString *backupDbPath = [[NSBundle mainBundle] pathForResource:@"OfficeHarmony" ofType:@"rdb"];
+		if (backupDbPath == nil) {
+			// couldn't find backup db to copy, bail
+			NSLog(@"couldn't find database file");
+			return NO;
+		} else {
+			NSLog(@"found database file, copying to documents folder");
+			BOOL copiedBackupDb = [[NSFileManager defaultManager]
+								   copyItemAtPath:backupDbPath
+								   toPath:dbFilePath
+								   error:nil];
+			if (! copiedBackupDb) {
+				// copying backup db failed, bail
+				NSLog(@"didn't copy backup db");
+				return NO;
+			}
+			else
+				NSLog(@"successfully copied file to documents folder");
+		}
+	}
+	else{
+		NSLog(@"found database file, not copying anywhere");
+	}
+	return YES;	
+}
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+	//Pinch Media Analytics
+	NSString *applicationCode = @"f9a78bdf09660a105a2934257e079dd4";
+    [Beacon initAndStartBeaconWithApplicationCode:applicationCode useCoreLocation:YES useOnlyWiFi:NO];
+	
+	NSLog(@"applicationDidFinishLaunching");
+	if (! [self initializeDatabase]) {
+		NSLog(@"Couldn't initialize database;  major fail");
+		return;
+	}
+	
+	self.scalingMode = MPMovieScalingModeAspectFill;
+	
+    // Add the tab bar controller's current view as a subview of the window
+    [window addSubview:tabBarController.view];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [Beacon endBeacon];
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+	NSLog(@"OfficeHarmonyAppDelegate applicationDidReceiveMemoryWarning");
+}
+
+/*
+// Optional UITabBarControllerDelegate method
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+}
+*/
+
+/*
+// Optional UITabBarControllerDelegate method
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed {
+}
+*/
+
+
+- (void)dealloc {
+    [tabBarController release];
+    [window release];
+    [super dealloc];
+}
+
+@end
+

@@ -1,0 +1,29 @@
+//
+//  OfficeHarmonyAppDelegate.h
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/23/09.
+//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "SQLQuery.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+
+@interface OfficeHarmonyAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate, UIAlertViewDelegate> {
+    UIWindow *window;
+    UITabBarController *tabBarController;
+	NSInteger backgroundColor;
+	NSInteger scalingMode;
+	NSInteger controlMode;
+}
+
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, assign) NSInteger backgroundColor;
+@property (nonatomic, assign) NSInteger scalingMode;
+@property (nonatomic, assign) NSInteger controlMode;
+
+@end

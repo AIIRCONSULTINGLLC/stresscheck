@@ -1,0 +1,278 @@
+//
+//  QuizViewController.m
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/24//09.
+//  Copyright AVAI 2009. All rights reserved.
+//
+
+#import "QuizViewController.h"
+
+
+#define kQuestionWidth 320
+#define kQuestionHeight 353
+
+static NSUInteger const kProgressLabelTag = 2;
+static NSUInteger const kTitleLabelTag = 3;
+static NSUInteger const kTableViewTag = 4;	
+static NSUInteger const kRestartButtonTag = 5;
+
+@implementation QuizViewController
+
+@synthesize questions = _questions;
+@synthesize questionTable = _questionTable;
+@synthesize currentQuestion = _currentQuestion;
+@synthesize questionIndex = _questionIndex;
+@synthesize numQuestions = _numQuestions;
+
+/*
+// The designated initializer. Override to perform setup that is required before the view is loaded.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView {
+}
+*/
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	
+	// create the initial question view	
+	self.questionTable.rowHeight = 46;
+	self.questionTable.separatorColor = [UIColor whiteColor];
+	self.questionTable.backgroundColor = [UIColor OHLightPurple];
+	UITableViewCell *tableHeader = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100)];
+	tableHeader.backgroundColor = [UIColor clearColor];
+	UILabel *progressLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 5, self.view.frame.size.width-40, 15)];
+	progressLabel.tag = kProgressLabelTag;
+	progressLabel.font = [UIFont systemFontOfSize:13];
+	progressLabel.textColor = [UIColor OHDarkPurple];
+	progressLabel.backgroundColor = [UIColor clearColor];
+	progressLabel.textAlignment = UITextAlignmentRight;
+	progressLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	[tableHeader addSubview:progressLabel];
+	[progressLabel release];
+	
+	UILabel *questionPrompt = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width-40, 80)];
+	questionPrompt.tag = kTitleLabelTag;
+	questionPrompt.font = [UIFont boldSystemFontOfSize:18];
+	questionPrompt.textColor = [UIColor OHDarkPurple];
+	questionPrompt.backgroundColor = [UIColor clearColor];
+	questionPrompt.textAlignment = UITextAlignmentLeft;
+	questionPrompt.numberOfLines = 3;
+	questionPrompt.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	[tableHeader addSubview:questionPrompt];
+	[questionPrompt release];
+	
+	self.questionTable.tableHeaderView = tableHeader;
+	self.questionTable.scrollEnabled = NO;
+	//Figure out how many questions there are
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:@"SELECT COUNT (*) FROM Questions"];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		self.numQuestions = sqlite3_column_int (sqlStatement, 0);
+		NSLog(@"numQuestions: %d", self.numQuestions);
+	}
+	[query release];
+	
+	
+	//Display the first question
+	self.currentQuestion = [[Question alloc] init];
+	self.questionIndex = 0;
+	//[self loadQuestionWithAnimation: UIViewAnimationTransitionNone];
+}
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	NSLog(@"QuizViewController viewDidAppear");
+	[self.questionTable reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
+	[self loadQuestionWithAnimation: UIViewAnimationTransitionNone];
+}
+
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+	[self.questions release];
+	[self.questionTable release];
+    [super dealloc];
+}
+
+-(void) loadQuestionWithAnimation:(UIViewAnimationTransition) animationTransition
+{ 
+	NSLog(@"loadQuestionWithAnimation");
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.75];
+	[UIView setAnimationTransition:animationTransition forView:self.questionTable cache:YES];
+	[self.questionTable removeFromSuperview];
+	UILabel *progressLabel = (UILabel *)[self.questionTable.tableHeaderView viewWithTag:kProgressLabelTag];
+	UILabel *titleLabel = (UILabel *)[self.questionTable.tableHeaderView viewWithTag:kTitleLabelTag];
+
+	[self getCurrentQuizQuestion];
+	progressLabel.text = [NSString stringWithFormat:@"Step %d of %d", self.questionIndex+1, self.numQuestions];
+	titleLabel.text = self.currentQuestion.prompt;
+	[self.questionTable reloadData];
+	
+	[self.view addSubview:self.questionTable];
+	[UIView commitAnimations];
+}
+
+- (void) getCurrentQuizQuestion
+{
+	//Initialize question
+	self.currentQuestion = [[Question alloc] init];
+	
+	// Get prompt, question state, and questionDomain
+	NSString *sql = [NSString stringWithFormat:@"SELECT prompt, questionState, domainId FROM Questions WHERE displayOrder=%d", self.questionIndex+1]; //displayOrder is indexed at 1
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		self.currentQuestion.prompt = [[NSString alloc] initWithCString:(char *)sqlite3_column_text (sqlStatement, 0)];
+		self.currentQuestion.questionState = sqlite3_column_int (sqlStatement, 1);
+		self.currentQuestion.questionDomain = [[NSNumber alloc] initWithInt:sqlite3_column_int (sqlStatement, 2)];
+	}
+	
+	// Get answers
+	sql = @"SELECT Answers.text, Answers.pointValue FROM Questions ";
+	sql = [sql stringByAppendingString:@"JOIN QuestionAnswer on Questions.id = QuestionAnswer.questionId "];
+	sql = [sql stringByAppendingString:@"JOIN Answers on Answers.id = QuestionAnswer.answerId "];
+	sql = [sql stringByAppendingFormat:@"WHERE Questions.displayOrder=%d ", self.questionIndex+1]; //displayOrder is indexed at 1
+	sql = [sql stringByAppendingString:@"ORDER BY QuestionAnswer.displayOrder"];
+	
+	query = [[SQLQuery alloc] initWithQuery:sql];
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		[self.currentQuestion.answers addObject:[[NSString alloc] initWithCString:(char *)sqlite3_column_text (sqlStatement, 0)]];
+		[self.currentQuestion.pointValues addObject:[[NSNumber alloc] initWithInt:sqlite3_column_int (sqlStatement, 1)]];
+	}
+	[query release];
+}
+
+-(void) loadGeneralResponse
+{
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:0.75];
+	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.questionTable cache:YES];
+	[self.questionTable removeFromSuperview];
+	
+	GeneralResponseViewController *generalResponseViewController = [[GeneralResponseViewController alloc] init];
+	[self.view addSubview:generalResponseViewController.view];
+	[UIView commitAnimations];
+}
+
+-(IBAction) restartButtonTouch:(id)sender
+{
+	//Reset all the previously selected choices
+	NSString *sql = [NSString stringWithFormat:@"UPDATE Questions SET questionState=0"];
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil);
+	[query release];	
+	
+	//Load the first question
+	self.questionIndex = 0;
+	[self loadQuestionWithAnimation: UIViewAnimationTransitionFlipFromRight];
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [self.currentQuestion.answers count];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *CellIdentifier = @"Cell";
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if(cell == nil) {
+		//No reusable cell was available, so we create a new cell and configure its subviews.
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+	}
+	//NSLog(@"cellForRowAtIndexPath: %d", indexPath.row);
+	cell.textLabel.text = [self.currentQuestion.answers objectAtIndex:indexPath.row];
+	cell.textLabel.textColor = [UIColor OHDarkPurple];
+	cell.textLabel.font = [UIFont systemFontOfSize:18];
+	if(indexPath.row == self.currentQuestion.questionState-1)
+	{
+		NSLog(@"loading checked  %d  %d", indexPath.row+1, self.currentQuestion.questionState);
+		cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"OH_butt_checkboxON.png" ofType:nil]];
+	}
+	else
+	{
+		NSLog(@"loading unchecked %d  %d", indexPath.row+1, self.currentQuestion.questionState);
+		cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"OH_butt_checkboxOFF.png" ofType:nil]];
+	}
+	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	NSLog(@"didSelectRowAtIndexPath: %d", indexPath.row);
+
+	// Update the question state
+	self.currentQuestion.questionState = indexPath.row+1;
+	NSString *sql = [NSString stringWithFormat:@"UPDATE Questions SET questionState=%d WHERE displayOrder=%d", indexPath.row+1, self.questionIndex+1]; //displayOrder is indexed at 1
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil);
+	[query release];
+
+	[tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
+	[NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(nextQuestion:) userInfo:nil repeats:NO];
+}
+
+-(void) nextQuestion:(NSTimer *)theTimer
+{
+	self.questionIndex++;
+	NSLog(@"self.questionIndex, %d", self.questionIndex);
+	if(self.questionIndex < self.numQuestions)
+	{
+		[self loadQuestionWithAnimation:UIViewAnimationTransitionFlipFromRight];
+	}
+	else
+	{
+		self.questionIndex = 0;
+		[self loadQuestionWithAnimation:UIViewAnimationTransitionNone];
+		GeneralResponseViewController *generalResponse = [[GeneralResponseViewController alloc] initWithNibName:@"GeneralResponseViewController" bundle:[NSBundle mainBundle]];
+		[self.navigationController pushViewController:generalResponse animated:YES];
+		[generalResponse release];
+	}
+}
+
+@end

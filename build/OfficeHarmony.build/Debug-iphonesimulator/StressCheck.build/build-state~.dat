@@ -1,0 +1,2544 @@
+TStressCheck
+v7
+r0
+t321261762.193677
+cCheck dependencies
+cProcessInfoPlistFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Info.plist StressCheck-Info.plist
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/MindCell.xib
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.xib
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.xib
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OfficeHarmony115.rdb OfficeHarmony115.rdb
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.xib
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.xib
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_minddetailarrow.jpg OH_minddetailarrow.jpg
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.xib
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.xib
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.xib
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_contact.png OH_tabicon_contact.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_home.png OH_tabicon_home.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_mind.png OH_tabicon_mind.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_movement.png OH_tabicon_movement.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_stresstest.png OH_tabicon_stresstest.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_full.png OH_bkg_full.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_page_restart.png OH_butt_page_restart.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_navbar.png OH_navbar.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_navbar_head.png OH_navbar_head.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back.png OH_butt_top_back.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_indepth.png OH_butt_top_indepth.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_checkboxOFF.png OH_butt_checkboxOFF.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_checkboxON.png OH_butt_checkboxON.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_contactman.png OH_butt_contactman.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_contacturl.png OH_butt_contacturl.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_homeimage.png OH_homeimage.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_greenshine.jpg OH_bkg_greenshine.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back_green.png OH_butt_top_back_green.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_purpleshine.jpg OH_bkg_purpleshine.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back_purple.png OH_butt_top_back_purple.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/Default.png StressCheck/Default.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_icon_stress_57x57_03.png StressCheck/OH_icon_stress_57x57_03.png
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/MainWindow.xib
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_contact.jpg StressCheck/OH_bkg_contact.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_godeeper_larger01.png OH_butt_top_godeeper_larger01.png
+cCopyPlistFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Entitlements.plist Entitlements.plist
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_navbar_purple.png OH_navbar_purple.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_bullbear.jpg OH_thumb_OH_image_video_bullbear.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_coffee.jpg OH_thumb_OH_image_video_coffee.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_sun.jpg OH_thumb_OH_image_video_sun.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_headache.jpg OH_thumb_OH_image_video_headache.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_kickshoes.jpg OH_thumb_OH_image_video_kickshoes.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_detox.jpg OH_thumb_OH_image_video_detox.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_beach.jpg OH_image_audio_beach.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_burden.jpg OH_image_audio_burden.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_leavework.jpg OH_image_audio_leavework.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_bullbear.jpg OH_image_video_bullbear.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_coffee.jpg OH_image_video_coffee.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_detox.jpg OH_image_video_detox.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_headache.jpg OH_image_video_headache.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_kickshoes.jpg OH_image_video_kickshoes.jpg
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_sun.jpg OH_image_video_sun.jpg
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.xib
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_playvid.png OH_butt_playvid.png
+cCopyStringsFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/en.lproj/Localizable.strings en.lproj/Localizable.strings
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Mind_splash.png StressCheck/OH_Mind_splash.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Movement_splash.png StressCheck/OH_Movement_splash.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download.png StressCheck/OH_butt_download.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_meadow.jpg OH_image_audio_meadow.jpg
+cCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.xib
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Mind_splash@2x.png StressCheck/OH_Mind_splash@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Movement_splash@2x.png StressCheck/OH_Movement_splash@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Movement.png StressCheck/OH_butt_download_Movement.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Movement@2x.png StressCheck/OH_butt_download_Movement@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Mind.png StressCheck/OH_butt_download_Mind.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Mind@2x.png StressCheck/OH_butt_download_Mind@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/Default@2x.png StressCheck/Default@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/BrushedMetalBack.png BrushedMetalBack.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/BrushedMetalBack@2x.png BrushedMetalBack@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/Button.png Button.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/Button@2x.png Button@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/email_button.png email_button.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/email_button@2x.png email_button@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/metal_bar.png metal_bar.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/metal_bar@2x.png metal_bar@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/phone_button.png phone_button.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/phone_button@2x.png phone_button@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/icon.png StressCheck/icon.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/icon@2x.png StressCheck/icon@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/contact.png contact.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/contact@2x.png contact@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_check.png banner_brushed_stress_check.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_check@2x.png banner_brushed_stress_check@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_domains.png banner_brushed_stress_domains.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_domains@2x.png banner_brushed_stress_domains@2x.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_tracker.png banner_brushed_stress_tracker.png
+cCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_tracker@2x.png banner_brushed_stress_tracker@2x.png
+cProcessPCH /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch.gch OfficeHarmony_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch.gch OfficeHarmony_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/main.o /Users/richard/OfficeHarmony/SourceCode1.3/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Video.o /Users/richard/OfficeHarmony/SourceCode1.3/Video.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MindCell.o /Users/richard/OfficeHarmony/SourceCode1.3/MindCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ContactUsController.o /Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Question.o /Users/richard/OfficeHarmony/SourceCode1.3/Question.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/OfficeHarmonyAppDelegate.o /Users/richard/OfficeHarmony/SourceCode1.3/OfficeHarmonyAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Reachability.o /Users/richard/OfficeHarmony/SourceCode1.3/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SQLQuery.o /Users/richard/OfficeHarmony/SourceCode1.3/Classes/../SQLQuery.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GeneralResponseViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MovementCell.o /Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MovementDetailViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Tweet.o /Users/richard/OfficeHarmony/SourceCode1.3/Tweet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/TwitterReader.o /Users/richard/OfficeHarmony/SourceCode1.3/TwitterReader.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/HomeViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/VideoStressViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJSON.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonWriter.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonParser.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonBase.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/NSString+SBJSON.o /Users/richard/OfficeHarmony/SourceCode1.3/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/NSObject+SBJSON.o /Users/richard/OfficeHarmony/SourceCode1.3/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MKStoreManager.o /Users/richard/OfficeHarmony/SourceCode1.3/MKStoreManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MKStoreObserver.o /Users/richard/OfficeHarmony/SourceCode1.3/MKStoreObserver.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ioapi.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/mztools.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/unzip.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/zip.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ZipArchive.o /Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizRecord.o /Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/UIColor-HSVAdditions.o /Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryView.o /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseView.o /Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseView.o /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseGraphView.o /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/CustomMoviePlayerViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/AdManager.o /Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GradientView.o /Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck normal i386
+cGenerateDSYMFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app.dSYM /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck
+cTouch /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004CC128840000000000000733
+t1287727236
+s1843
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004CC122E10000000000075FE0
+t1287725793
+s483296
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC1224600000000001EA9C0
+t1287725638
+s2009536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004CC1224400000000001C3D40
+t1287725636
+s1850688
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004CC127E80000000000074190
+t1287727080
+s475536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+c000000004CC122BC00000000000C2CC0
+t1287725756
+s797888
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.h
+c000000004CC656490000000000000294
+t1288066633
+s660
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004CC6569800000000001AAD60
+t1288066712
+s1748320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004CC6562D000000000009BEC0
+t1288066605
+s638656
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1233C00000000000000C4
+t1287725884
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC12431000000000015CDB0
+t1287726129
+s1428912
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.h
+c000000004CC1291A000000000000016E
+t1287727386
+s366
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
+c000000004CC1291D0000000000011AB0
+t1287727389
+s72368
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SCNetworkReachability.h
+c000000004CC121E8000000000000353E
+t1287725544
+s13630
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
+c000000004CC121E80000000000001A58
+t1287725544
+s6744
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004CC121F60000000000068970
+t1287725558
+s428400
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/iAd.framework/Headers/iAd.h
+c000000004CC657750000000000000071
+t1288066933
+s113
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/iAd.framework/iAd
+c000000004CC65780000000000002F590
+t1288066944
+s193936
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/arpa/inet.h
+c000000004CB3E46D0000000000001533
+t1286857837
+s5427
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/errno.h
+c000000004CB3E48600000000000003EB
+t1286857862
+s1003
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/ifaddrs.h
+c000000004CB3E4770000000000000782
+t1286857847
+s1922
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netdb.h
+c000000004A4181220000000000003057
+t1245806882
+s12375
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netinet/in.h
+c000000004CBFACA90000000000005462
+t1287629993
+s21602
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netinet6/in6.h
+c000000004CBFACA80000000000004F61
+t1287629992
+s20321
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sqlite3.h
+c000000004CC109C90000000000042B54
+t1287719369
+s273236
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdio.h
+c000000004CB3E48600000000000040AC
+t1286857862
+s16556
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdlib.h
+c000000004CB3E4860000000000002DF5
+t1286857862
+s11765
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/string.h
+c000000004CB3E4860000000000001731
+t1286857862
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/socket.h
+c000000004CBFACAC0000000000005A69
+t1287629996
+s23145
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/time.h
+c000000004CB3E486000000000000178E
+t1286857862
+s6030
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/zconf.h
+c000000004CC109BF0000000000002488
+t1287719359
+s9352
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/zlib.h
+c000000004CC109BF00000000000102A5
+t1287719359
+s66213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A1198340000000000003197
+t1242667060
+s12695
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libsqlite3.0.dylib
+c000000004CC109D90000000000092C20
+t1287719385
+s601120
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/AdManager.h
+c000000004D3CD57000000000000001A1
+t1295832432
+s417
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m
+c000000004D73F2B30000000000000A76
+t1299444403
+s2678
+i"AdManager.h"
+i<iAd/iAD.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/BrushedMetalBack.png
+c000000004D58D084000000000000A709
+t1297666180
+s42761
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/BrushedMetalBack@2x.png
+c000000004D58D084000000000001ADBC
+t1297666180
+s110012
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Button.png
+c000000004D58D07A0000000000001056
+t1297666170
+s4182
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Button@2x.png
+c000000004D58D07A00000000000026FF
+t1297666170
+s9983
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Classes/../SQLQuery.m
+c000000004D3A1F32000000000000075E
+t1295654706
+s1886
+i"SQLQuery.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Constants.h
+c000000004D3CE0730000000000001005
+t1295835251
+s4101
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.h
+c000000004ABD203A000000000000020C
+t1253908538
+s524
+i<UIKit/UIKit.h>
+i"Reachability.h"
+i"SQLQuery.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.m
+c000000004D6351B800000000000007B1
+t1298354616
+s1969
+i"ContactUsController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.xib
+c000000004D63511400000000000044BA
+t1298354452
+s17594
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.h
+c000000004D3C9E17000000000000018C
+t1295818263
+s396
+i<UIKit/UIKit.h>
+i<MediaPlayer/MediaPlayer.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m
+c000000004D73F0BA00000000000015F3
+t1299443898
+s5619
+i"CustomMoviePlayerViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.h
+c000000004D3AF66B0000000000000153
+t1295709803
+s339
+i<UIKit/UIKit.h>
+i"QuizRecord.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m
+c000000004D4F598E0000000000000B61
+t1297045902
+s2913
+i"DetailedResponseGraphView.h"
+i"DetailedResponseView.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.h
+c000000004D3914B10000000000000163
+t1295586481
+s355
+i<UIKit/UIKit.h>
+i"QuizRecord.h"
+i"ResponseView.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m
+c000000004D69D460000000000000073E
+t1298781280
+s1854
+i"DetailedResponseView.h"
+i<QuartzCore/QuartzCore.h>
+i"UIColor-HSVAdditions.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.h
+c000000004D3CE3FB0000000000000440
+t1295836155
+s1088
+i<UIKit/UIKit.h>
+i"SQLQuery.h"
+i"QuizViewController.h"
+i"UILabel2.h"
+i"Constants.h"
+i"QuizRecord.h"
+i"DetailedResponseGraphView.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.m
+c000000004D6364DD0000000000000CE2
+t1298359517
+s3298
+i"DetailedResponseViewController.h"
+i"QuizRecord.h"
+i"AdManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.xib
+c000000004D635B0A000000000000570E
+t1298357002
+s22286
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Entitlements.plist
+c000000004A9DFA9800000000000000E1
+t1251867288
+s225
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/FlurryLibWithLocation/FlurryAPI.h
+c000000004D28CA180000000000000E4B
+t1294518808
+s3659
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/FlurryLibWithLocation/libFlurryWithLocation.a
+c000000004D28CA18000000000043664C
+t1294518808
+s4417100
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.h
+c000000004D3D1BDC00000000000003BA
+t1295850460
+s954
+i<UIKit/UIKit.h>
+i"SQLQuery.h"
+i"QuizRecord.h"
+i"ResponseView.h"
+i"DetailedResponseViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.m
+c000000004D73E3850000000000000EE0
+t1299440517
+s3808
+i"GeneralResponseViewController.h"
+i"ResponseHistoryViewController.h"
+i<QuartzCore/QuartzCore.h>
+i"AdManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.xib
+c000000004D632F020000000000007380
+t1298345730
+s29568
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/GradientView.h
+c000000004D69D03C00000000000000DB
+t1298780220
+s219
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m
+c000000004D69D1140000000000000131
+t1298780436
+s305
+i"GradientView.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.h
+c000000004A8D6ACC00000000000003F0
+t1250781900
+s1008
+i<UIKit/UIKit.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i"TwitterReader.h"
+i"Reachability.h"
+i"Constants.h"
+i"OfficeHarmonyAppDelegate.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.m
+c000000004D28C2C20000000000001579
+t1294516930
+s5497
+i"HomeViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.xib
+c000000004AC235990000000000003585
+t1254241689
+s13701
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/JSON.h
+c000000004A68741300000000000008F9
+t1248359443
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MKStoreManager.h
+c000000004B59FCFC000000000000057A
+t1264188668
+s1402
+i<Foundation/Foundation.h>
+i<StoreKit/StoreKit.h>
+i"MKStoreObserver.h"
+i"JSON.h"
+i"Constants.h"
+i"ZipArchive.h"
+i"OfficeHarmonyAppDelegate.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MKStoreManager.m
+c000000004B59F6200000000000001842
+t1264186912
+s6210
+i"MKStoreManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MKStoreObserver.h
+c000000004B5484ED0000000000000269
+t1263830253
+s617
+i<Foundation/Foundation.h>
+i<StoreKit/StoreKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MKStoreObserver.m
+c000000004B59F61F00000000000016E6
+t1264186911
+s5862
+i"MKStoreObserver.h"
+i"MKStoreManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MindCell.h
+c000000004A79C73E00000000000002A2
+t1249494846
+s674
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MindCell.m
+c000000004D2A09AD00000000000003E7
+t1294600621
+s999
+i"MindCell.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MindCell.xib
+c000000004AC67B450000000000003A34
+t1254521669
+s14900
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.h
+c000000004A79C708000000000000035B
+t1249494792
+s859
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.m
+c000000004D28D4E40000000000000485
+t1294521572
+s1157
+i"MovementCell.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.xib
+c000000004ABD29850000000000003937
+t1253910917
+s14647
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.h
+c000000004D3D1C85000000000000048E
+t1295850629
+s1166
+i<UIKit/UIKit.h>
+i"Video.h"
+i"CustomMoviePlayerViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.m
+c000000004D3D1C9E00000000000015FE
+t1295850654
+s5630
+i"MovementDetailViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.xib
+c000000004AC63D970000000000006079
+t1254505879
+s24697
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/NSObject+SBJSON.h
+c000000004A6874130000000000000A01
+t1248359443
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/NSObject+SBJSON.m
+c000000004A68741300000000000008B9
+t1248359443
+s2233
+i"NSObject+SBJSON.h"
+i"SBJsonWriter.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/NSString+SBJSON.h
+c000000004A6874130000000000000916
+t1248359443
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/NSString+SBJSON.m
+c000000004A687413000000000000089F
+t1248359443
+s2207
+i"NSString+SBJSON.h"
+i"SBJsonParser.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_bkg_full.png
+c000000004A8B060B0000000000023D2B
+t1250625035
+s146731
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_bkg_greenshine.jpg
+c000000004A968FB800000000000011B0
+t1251381176
+s4528
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_bkg_purpleshine.jpg
+c000000004A96C32F0000000000000C66
+t1251394351
+s3174
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_checkboxOFF.png
+c000000004A95901C0000000000001628
+t1251315740
+s5672
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_checkboxON.png
+c000000004A95904800000000000016E0
+t1251315784
+s5856
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_contactman.png
+c000000004A9D62FD0000000000004684
+t1251828477
+s18052
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_contacturl.png
+c000000004A95691400000000000010F9
+t1251305748
+s4345
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_page_restart.png
+c000000004A8B060B000000000000111A
+t1250625035
+s4378
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_playvid.png
+c000000004ABD396B00000000000022A5
+t1253914987
+s8869
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_top_back.png
+c000000004A8D98A4000000000000107B
+t1250793636
+s4219
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_top_back_green.png
+c000000004A968FB800000000000019F3
+t1251381176
+s6643
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_top_back_purple.png
+c000000004ABBDC43000000000000107B
+t1253825603
+s4219
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_top_godeeper_larger01.png
+c000000004D366E300000000000000D48
+t1295412784
+s3400
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_butt_top_indepth.png
+c000000004A8D98A40000000000001365
+t1250793636
+s4965
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_homeimage.png
+c000000004AC2356300000000000095BB
+t1254241635
+s38331
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_audio_beach.jpg
+c000000004AC0FB5400000000000030E1
+t1254161236
+s12513
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_audio_burden.jpg
+c000000004AC0FB990000000000003334
+t1254161305
+s13108
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_audio_leavework.jpg
+c000000004AC0FB9200000000000033E7
+t1254161298
+s13287
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_audio_meadow.jpg
+c000000004B575562000000000000393F
+t1264014690
+s14655
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_video_bullbear.jpg
+c000000004B4F454F00000000000038FF
+t1263486287
+s14591
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_video_coffee.jpg
+c000000004AC6326F000000000001128B
+t1254503023
+s70283
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_video_detox.jpg
+c000000004AC63287000000000000F255
+t1254503047
+s62037
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_video_headache.jpg
+c000000004AC632A1000000000000BEF8
+t1254503073
+s48888
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_video_kickshoes.jpg
+c000000004AC632BC000000000000EC48
+t1254503100
+s60488
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_image_video_sun.jpg
+c000000004AC632D0000000000000CBA5
+t1254503120
+s52133
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_minddetailarrow.jpg
+c000000004A687413000000000000030A
+t1248359443
+s778
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_navbar.png
+c000000004A8B060B0000000000000C8A
+t1250625035
+s3210
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_navbar_head.png
+c000000004A8B060B000000000000165E
+t1250625035
+s5726
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_navbar_purple.png
+c000000004D58D3750000000000000AE9
+t1297666933
+s2793
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_tabicon_contact.png
+c000000004A89B7870000000000000F32
+t1250539399
+s3890
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_tabicon_home.png
+c000000004A89B7870000000000000EE0
+t1250539399
+s3808
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_tabicon_mind.png
+c000000004A89B7870000000000000E1D
+t1250539399
+s3613
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_tabicon_movement.png
+c000000004A89B7870000000000000DBA
+t1250539399
+s3514
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_tabicon_stresstest.png
+c000000004A89B7870000000000000FB4
+t1250539399
+s4020
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_thumb_OH_image_video_bullbear.jpg
+c000000004ABBE70C000000000000222E
+t1253828364
+s8750
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_thumb_OH_image_video_coffee.jpg
+c000000004ABBE8060000000000001E5C
+t1253828614
+s7772
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_thumb_OH_image_video_detox.jpg
+c000000004ABBE8FF0000000000001BAA
+t1253828863
+s7082
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_thumb_OH_image_video_headache.jpg
+c000000004ABBE9740000000000002797
+t1253828980
+s10135
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_thumb_OH_image_video_kickshoes.jpg
+c000000004ABBE9E40000000000002991
+t1253829092
+s10641
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OH_thumb_OH_image_video_sun.jpg
+c000000004ABBEA13000000000000231E
+t1253829139
+s8990
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OfficeHarmony115.rdb
+c000000004D4F8FB0000000000000F400
+t1297059760
+s62464
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OfficeHarmonyAppDelegate.h
+c000000004D69E72400000000000003FB
+t1298786084
+s1019
+i<UIKit/UIKit.h>
+i"Constants.h"
+i"SQLQuery.h"
+i<MediaPlayer/MediaPlayer.h>
+i<AVFoundation/AVFoundation.h>
+i<StoreKit/StoreKit.h>
+i"MKStoreManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OfficeHarmonyAppDelegate.m
+c000000004D75CDD80000000000001BD5
+t1299566040
+s7125
+i"OfficeHarmonyAppDelegate.h"
+i"FlurryAPI.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/OfficeHarmony_Prefix.pch
+c000000004A68A89E00000000000000C3
+t1248372894
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Question.h
+c000000004D3A5C4A0000000000000264
+t1295670346
+s612
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Question.m
+c000000004A7C8E5400000000000002C1
+t1249676884
+s705
+i"Question.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.h
+c000000004D45C06A00000000000004B8
+t1296416874
+s1208
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m
+c000000004D45C4AA000000000000233B
+t1296417962
+s9019
+i"QuizRecord.h"
+i"SQLQuery.h"
+i"UIColor-HSVAdditions.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.h
+c000000004D3BA03200000000000004EE
+t1295753266
+s1262
+i<UIKit/UIKit.h>
+i"Question.h"
+i"GeneralResponseViewController.h"
+i"SQLQuery.h"
+i"Constants.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.m
+c000000004D61FA57000000000000266F
+t1298266711
+s9839
+i"QuizViewController.h"
+i"AdManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.xib
+c000000004D75CD2C0000000000009005
+t1299565868
+s36869
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Reachability.h
+c000000004A68741300000000000013B4
+t1248359443
+s5044
+i<UIKit/UIKit.h>
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Reachability.m
+c000000004A6874130000000000005B34
+t1248359443
+s23348
+i<sys/socket.h>
+i<netinet/in.h>
+i<netinet6/in6.h>
+i<arpa/inet.h>
+i<ifaddrs.h>
+i<netdb.h>
+i"Reachability.h"
+i<SystemConfiguration/SCNetworkReachability.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.h
+c000000004D39E7290000000000000238
+t1295640361
+s568
+i<UIKit/UIKit.h>
+i"ResponseView.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m
+c000000004D69D43A0000000000000730
+t1298781242
+s1840
+i"ResponseHistoryView.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.h
+c000000004D635C8D000000000000028D
+t1298357389
+s653
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m
+c000000004D6A08610000000000001086
+t1298794593
+s4230
+i"ResponseHistoryViewController.h"
+i"QuizRecord.h"
+i"Constants.h"
+i"UIColor-HSVAdditions.h"
+i"ResponseHistoryView.h"
+i"DetailedResponseViewController.h"
+i"AdManager.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.xib
+c000000004D6A054200000000000053AA
+t1298793794
+s21418
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.h
+c000000004D69D24400000000000002AD
+t1298780740
+s685
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"QuizRecord.h"
+i"GradientView.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m
+c000000004D69D2550000000000000F2C
+t1298780757
+s3884
+i<QuartzCore/QuartzCore.h>
+i"ResponseView.h"
+i"UIColor-HSVAdditions.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJSON.h
+c000000004A6874130000000000000AED
+t1248359443
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJSON.m
+c000000004A6874130000000000001ABC
+t1248359443
+s6844
+i"SBJSON.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJsonBase.h
+c000000004A6874130000000000000B82
+t1248359443
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJsonBase.m
+c000000004A6874130000000000000AC1
+t1248359443
+s2753
+i"SBJsonBase.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJsonParser.h
+c000000004A6874130000000000000C0B
+t1248359443
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJsonParser.m
+c000000004A68741300000000000036CF
+t1248359443
+s14031
+i"SBJsonParser.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJsonWriter.h
+c000000004A6874130000000000001140
+t1248359443
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SBJsonWriter.m
+c000000004A6874130000000000001E83
+t1248359443
+s7811
+i"SBJsonWriter.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/SQLQuery.h
+c000000004D3A1F7200000000000001DA
+t1295654770
+s474
+i<Foundation/Foundation.h>
+i"sqlite3.h"
+i"Constants.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/Default.png
+c000000004D3B00500000000000006787
+t1295712336
+s26503
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/Default@2x.png
+c000000004D3B0053000000000000E378
+t1295712339
+s58232
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/MainWindow.xib
+c000000004D4F54B50000000000009007
+t1297044661
+s36871
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_Mind_splash.png
+c000000004D3A5A7C000000000002B200
+t1295669884
+s176640
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_Mind_splash@2x.png
+c000000004D3A5A7C0000000000077E00
+t1295669884
+s491008
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_Movement_splash.png
+c000000004D3A5A7C000000000002B600
+t1295669884
+s177664
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_Movement_splash@2x.png
+c000000004D3A5A7E0000000000079200
+t1295669886
+s496128
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_bkg_contact.jpg
+c000000004ABD1CFE0000000000008613
+t1253907710
+s34323
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_butt_download.png
+c000000004B55CBDE0000000000000D8A
+t1263913950
+s3466
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_butt_download_Mind.png
+c000000004D3A5BD900000000000015DD
+t1295670233
+s5597
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_butt_download_Mind@2x.png
+c000000004D3A5B8900000000000032BF
+t1295670153
+s12991
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_butt_download_Movement.png
+c000000004D3A5BF70000000000001598
+t1295670263
+s5528
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_butt_download_Movement@2x.png
+c000000004D3A5BE40000000000003176
+t1295670244
+s12662
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/OH_icon_stress_57x57_03.png
+c000000004A968FB80000000000001390
+t1251381176
+s5008
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/icon.png
+c000000004D58D0840000000000000E35
+t1297666180
+s3637
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/icon@2x.png
+c000000004D58D08400000000000019D9
+t1297666180
+s6617
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Tweet.h
+c000000004A6897780000000000000152
+t1248368504
+s338
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Tweet.m
+c000000004A6897780000000000000206
+t1248368504
+s518
+i"Tweet.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/TwitterReader.h
+c000000004D2A07BF0000000000000354
+t1294600127
+s852
+i<Foundation/Foundation.h>
+i"Tweet.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/TwitterReader.m
+c000000004A9D69D20000000000000ED0
+t1251830226
+s3792
+i"TwitterReader.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.h
+c000000004D3A22260000000000000FEA
+t1295655462
+s4074
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m
+c000000004D34C1E40000000000003F62
+t1295303140
+s16226
+i"UIColor-HSVAdditions.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/UILabel2.h
+c000000004A79FE1D0000000000000131
+t1249508893
+s305
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Video.h
+c000000004ABBE53C0000000000000329
+t1253827900
+s809
+i<Foundation/Foundation.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/Video.m
+c000000004ABBE59400000000000002E6
+t1253827988
+s742
+i"Video.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.h
+c000000004D6A0BE30000000000000745
+t1298795491
+s1861
+i<StoreKit/StoreKit.h>
+i"SQLQuery.h"
+i"Video.h"
+i"MindCell.h"
+i"MovementCell.h"
+i"MovementDetailViewController.h"
+i"MKStoreManager.h"
+i"Reachability.h"
+i"OfficeHarmonyAppDelegate.h"
+i"CustomMoviePlayerViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.m
+c000000004D6A0C670000000000002BD3
+t1298795623
+s11219
+i"VideoStressViewController.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.xib
+c000000004D73FB900000000000006F59
+t1299446672
+s28505
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.h
+c000000004ADE80CA0000000000000457
+t1256095946
+s1111
+i<UIKit/UIKit.h>
+i"minizip/zip.h"
+i"minizip/unzip.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m
+c000000004D2A07AE000000000000213C
+t1294600110
+s8508
+i"ZipArchive.h"
+i"zlib.h"
+i"zconf.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/banner_brushed_stress_check.png
+c000000004D73FB1D0000000000006A34
+t1299446557
+s27188
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/banner_brushed_stress_check@2x.png
+c000000004D73FB8A00000000000118D5
+t1299446666
+s71893
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/banner_brushed_stress_domains.png
+c000000004D6200430000000000005901
+t1298268227
+s22785
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/banner_brushed_stress_domains@2x.png
+c000000004D62002D000000000000BC0B
+t1298268205
+s48139
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/banner_brushed_stress_tracker.png
+c000000004D61FFB300000000000056EF
+t1298268083
+s22255
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/banner_brushed_stress_tracker@2x.png
+c000000004D61FF91000000000000B8F2
+t1298268049
+s47346
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app
+t1299568962
+s3128
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app.dSYM
+t1299568962
+s102
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/BrushedMetalBack.png
+t1299568165
+s42761
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/BrushedMetalBack@2x.png
+t1299568165
+s110012
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Button.png
+t1299568165
+s4182
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Button@2x.png
+t1299568165
+s9983
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/ContactUsController.nib
+t1299567365
+s3948
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Default.png
+t1299568150
+s26503
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Default@2x.png
+t1299568165
+s58232
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/DetailedResponseViewController.nib
+t1299568133
+s4527
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Entitlements.plist
+t1299568162
+s62
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/GeneralResponseViewController.nib
+t1299568147
+s6135
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/HomeViewController.nib
+t1299568160
+s3495
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Info.plist
+t1299566252
+s670
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/MainWindow.nib
+t1299568155
+s5176
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/MindCell.nib
+t1299566268
+s4448
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/MovementCell.nib
+t1299568146
+s4325
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/MovementDetailViewController.nib
+t1299568149
+s6269
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_Mind_splash.png
+t1299568164
+s176640
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_Mind_splash@2x.png
+t1299568166
+s491008
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_Movement_splash.png
+t1299568164
+s177664
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_Movement_splash@2x.png
+t1299568166
+s496128
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_bkg_contact.jpg
+t1299568155
+s34323
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_bkg_full.png
+t1299568150
+s146731
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_bkg_greenshine.jpg
+t1299568150
+s4528
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_bkg_purpleshine.jpg
+t1299568150
+s3174
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_checkboxOFF.png
+t1299568150
+s5672
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_checkboxON.png
+t1299568150
+s5856
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_contactman.png
+t1299568150
+s18052
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_contacturl.png
+t1299568150
+s4345
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_download.png
+t1299568164
+s3466
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Mind.png
+t1299568165
+s5597
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Mind@2x.png
+t1299568165
+s12991
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Movement.png
+t1299568165
+s5528
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Movement@2x.png
+t1299568165
+s12662
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_page_restart.png
+t1299568150
+s4378
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_playvid.png
+t1299568163
+s8869
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back.png
+t1299568150
+s4219
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back_green.png
+t1299568150
+s6643
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back_purple.png
+t1299568150
+s4219
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_godeeper_larger01.png
+t1299568155
+s3400
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_indepth.png
+t1299568150
+s4965
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_homeimage.png
+t1299568150
+s38331
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_icon_stress_57x57_03.png
+t1299568150
+s5008
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_beach.jpg
+t1299568162
+s12513
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_burden.jpg
+t1299568162
+s13108
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_leavework.jpg
+t1299568163
+s13287
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_meadow.jpg
+t1299568164
+s14655
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_video_bullbear.jpg
+t1299568162
+s14591
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_video_coffee.jpg
+t1299568163
+s70283
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_video_detox.jpg
+t1299568162
+s62037
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_video_headache.jpg
+t1299568162
+s48888
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_video_kickshoes.jpg
+t1299568162
+s60488
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_image_video_sun.jpg
+t1299568162
+s52133
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_minddetailarrow.jpg
+t1299568136
+s778
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_navbar.png
+t1299568150
+s3210
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_navbar_head.png
+t1299568150
+s5726
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_navbar_purple.png
+t1299568162
+s2793
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_contact.png
+t1299568149
+s3890
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_home.png
+t1299568149
+s3808
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_mind.png
+t1299568149
+s3613
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_movement.png
+t1299568150
+s3514
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_stresstest.png
+t1299568150
+s4020
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_bullbear.jpg
+t1299568162
+s8750
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_coffee.jpg
+t1299568162
+s7772
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_detox.jpg
+t1299568162
+s7082
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_headache.jpg
+t1299568162
+s10135
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_kickshoes.jpg
+t1299568162
+s10641
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_sun.jpg
+t1299568162
+s8990
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/OfficeHarmony115.rdb
+t1299567520
+s62464
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/PkgInfo
+t1299566252
+s8
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/QuizViewController.nib
+t1299568135
+s5233
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/ResponseHistoryViewController.nib
+t1299568165
+s4866
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck
+t1299568961
+s831600
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/VideoStressViewController.nib
+t1299568164
+s6102
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_check.png
+t1299568166
+s27188
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_check@2x.png
+t1299568166
+s71893
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_domains.png
+t1299568166
+s22785
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_domains@2x.png
+t1299568166
+s48139
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_tracker.png
+t1299568166
+s22255
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_tracker@2x.png
+t1299568166
+s47346
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/contact.png
+t1299568166
+s273160
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/contact@2x.png
+t1299568167
+s937860
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/email_button.png
+t1299568165
+s3568
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/email_button@2x.png
+t1299568165
+s8301
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/en.lproj/Localizable.strings
+t1299568164
+s88
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/icon.png
+t1299568166
+s3637
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/icon@2x.png
+t1299568166
+s6617
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/metal_bar.png
+t1299568166
+s13027
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/metal_bar@2x.png
+t1299568166
+s49259
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/phone_button.png
+t1299568166
+s3901
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/phone_button@2x.png
+t1299568166
+s9321
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/AdManager.o
+t1299568959
+s44708
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ContactUsController.o
+t1299568204
+s53380
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/CustomMoviePlayerViewController.o
+t1299568960
+s54304
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseGraphView.o
+t1299568959
+s45844
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseView.o
+t1299568959
+s42872
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseViewController.o
+t1299568209
+s59084
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GeneralResponseViewController.o
+t1299568209
+s60208
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GradientView.o
+t1299568960
+s7700
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/HomeViewController.o
+t1299568213
+s72344
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MKStoreManager.o
+t1299568215
+s76212
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MKStoreObserver.o
+t1299568216
+s69764
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MindCell.o
+t1299568203
+s44288
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MovementCell.o
+t1299568210
+s47000
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MovementDetailViewController.o
+t1299568211
+s61876
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/NSObject+SBJSON.o
+t1299568214
+s8508
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/NSString+SBJSON.o
+t1299568214
+s8428
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/OfficeHarmonyAppDelegate.o
+t1299568213
+s78020
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Question.o
+t1299568203
+s14096
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizRecord.o
+t1299568959
+s37912
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizViewController.o
+t1299568207
+s82924
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Reachability.o
+t1299568208
+s43456
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryView.o
+t1299568959
+s46372
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryViewController.o
+t1299568959
+s63976
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseView.o
+t1299568959
+s53988
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJSON.o
+t1299568213
+s20068
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonBase.o
+t1299568214
+s13200
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonParser.o
+t1299568214
+s35864
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonWriter.o
+t1299568214
+s24848
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SQLQuery.o
+t1299568209
+s13088
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/StressCheck.LinkFileList
+c000000004D75CEAB00000000000016E6
+t1299566251
+s5862
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Tweet.o
+t1299568211
+s8940
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/TwitterReader.o
+t1299568212
+s28740
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/UIColor-HSVAdditions.o
+t1299568959
+s58576
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Video.o
+t1299568202
+s15868
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/VideoStressViewController.o
+t1299568214
+s103140
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ZipArchive.o
+t1299568958
+s30880
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ioapi.o
+t1299568955
+s7824
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/main.o
+t1299568202
+s6312
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/mztools.o
+t1299568955
+s9188
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/unzip.o
+t1299568956
+s31376
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/zip.o
+t1299568956
+s28712
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/contact.png
+c000000004D61F77C0000000000042B08
+t1298265980
+s273160
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/contact@2x.png
+c000000004D61F75F00000000000E4F84
+t1298265951
+s937860
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/email_button.png
+c000000004D58D07A0000000000000DF0
+t1297666170
+s3568
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/email_button@2x.png
+c000000004D58D07A000000000000206D
+t1297666170
+s8301
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/en.lproj/Localizable.strings
+c000000004AF845930000000000000080
+t1257784723
+s128
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/iphoneos3.0/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/iphoneos3.0/usr/lib/libz.1.2.3.dylib
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/main.m
+c000000004A68A89E0000000000000170
+t1248372894
+s368
+i<UIKit/UIKit.h>
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/metal_bar.png
+c000000004D58D07A00000000000032E3
+t1297666170
+s13027
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/metal_bar@2x.png
+c000000004D58D07A000000000000C06B
+t1297666170
+s49259
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/crypt.h
+c0000000049EFE13F00000000000012EC
+t1240457535
+s4844
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c
+c0000000049EFE13F0000000000000F1F
+t1240457535
+s3871
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.h
+c0000000049EFE13F0000000000000A32
+t1240457535
+s2610
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c
+c0000000049EFE13F000000000000204A
+t1240457535
+s8266
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"unzip.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c
+c000000004D2A09AD000000000000C6CC
+t1294600621
+s50892
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"unzip.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i"crypt.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.h
+c0000000049EFE13F000000000000340A
+t1240457535
+s13322
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c
+c0000000049EFE13F00000000000096AC
+t1240457535
+s38572
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<time.h>
+i"zlib.h"
+i"zip.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i"crypt.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.h
+c0000000049EFE13F000000000000237A
+t1240457535
+s9082
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/phone_button.png
+c000000004D58D07A0000000000000F3D
+t1297666170
+s3901
+
+N/Users/richard/OfficeHarmony/SourceCode1.3/phone_button@2x.png
+c000000004D58D07A0000000000002469
+t1297666170
+s9321
+
+N/var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch.gch
+t1299568193
+s15465680
+
+N/var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch.gch
+t1299568171
+s2142576
+
+NStressCheck-Info.plist
+c000000004D69F87600000000000003DF
+t1298790518
+s991
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies321261748#321261753#0(0"0(0#1#0"32651522506817640#0"0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/AdManager.o /Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.735658
+e321261759.899889
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/AdManager.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m321261759#321261759#0(0"0(0#0#54"/Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m8611479264#2089"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/AdManager.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/AdManager.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ContactUsController.o /Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/CustomMoviePlayerViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.650133
+e321261760.028572
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/CustomMoviePlayerViewController.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m321261759#321261760#0(0"0(0#0#76"/Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m8611702176#2133"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/CustomMoviePlayerViewController.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/CustomMoviePlayerViewController.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseGraphView.o /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.608012
+e321261759.735543
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseGraphView.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m321261759#321261759#0(0"0(0#0#70"/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m8612459296#2121"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseGraphView.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseGraphView.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseView.o /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.488730
+e321261759.650014
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseView.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m321261759#321261759#0(0"0(0#0#65"/Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m8611715392#2111"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseView.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseView.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/DetailedResponseViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GeneralResponseViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GradientView.o /Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.900010
+e321261760.009807
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GradientView.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m321261759#321261760#0(0"0(0#0#57"/Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m8611811424#2095"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/GradientView.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/GradientView.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/HomeViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MKStoreManager.o /Users/richard/OfficeHarmony/SourceCode1.3/MKStoreManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MKStoreObserver.o /Users/richard/OfficeHarmony/SourceCode1.3/MKStoreObserver.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MindCell.o /Users/richard/OfficeHarmony/SourceCode1.3/MindCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MovementCell.o /Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/MovementDetailViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/NSObject+SBJSON.o /Users/richard/OfficeHarmony/SourceCode1.3/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/NSString+SBJSON.o /Users/richard/OfficeHarmony/SourceCode1.3/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/OfficeHarmonyAppDelegate.o /Users/richard/OfficeHarmony/SourceCode1.3/OfficeHarmonyAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Question.o /Users/richard/OfficeHarmony/SourceCode1.3/Question.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizRecord.o /Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261758.840168
+e321261759.121166
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizRecord.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m321261758#321261759#0(0"0(0#0#55"/Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m8612008256#2091"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/QuizRecord.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizRecord.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/QuizViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Reachability.o /Users/richard/OfficeHarmony/SourceCode1.3/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryView.o /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.339474
+e321261759.452728
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryView.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m321261759#321261759#0(0"0(0#0#64"/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m8608048384#2109"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryView.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryView.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261756.202429
+e321261759.488614
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryViewController.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m321261756#321261759#0(0"0(0#0#74"/Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m8611779296#2129"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseHistoryViewController.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseView.o /Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.452847
+e321261759.607893
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseView.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m321261759#321261759#0(0"0(0#0#57"/Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m8609493312#2095"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/ResponseView.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ResponseView.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJSON.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonBase.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonParser.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SBJsonWriter.o /Users/richard/OfficeHarmony/SourceCode1.3/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/SQLQuery.o /Users/richard/OfficeHarmony/SourceCode1.3/Classes/../SQLQuery.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Tweet.o /Users/richard/OfficeHarmony/SourceCode1.3/Tweet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/TwitterReader.o /Users/richard/OfficeHarmony/SourceCode1.3/TwitterReader.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/UIColor-HSVAdditions.o /Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261759.121393
+e321261759.339362
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/UIColor-HSVAdditions.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m321261759#321261759#0(0"0(0#0#65"/Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m8612061024#2111"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/UIColor-HSVAdditions.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/UIColor-HSVAdditions.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/Video.o /Users/richard/OfficeHarmony/SourceCode1.3/Video.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/VideoStressViewController.o /Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ZipArchive.o /Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321261756.201172
+e321261758.840010
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ZipArchive.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m321261756#321261758#0(0"0(0#0#55"/Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m8612217184#2091"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/ZipArchive.m -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ZipArchive.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ioapi.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c normal i386 c com.apple.compilers.gcc.4_2
+s321261753.207712
+e321261755.762738
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ioapi.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c321261753#321261755#0(0"0(0#0#58"/Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c8458374088919181312#2035"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/minizip/ioapi.c -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/ioapi.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/main.o /Users/richard/OfficeHarmony/SourceCode1.3/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/mztools.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c normal i386 c com.apple.compilers.gcc.4_2
+s321261753.258049
+e321261755.764562
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/mztools.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c321261753#321261755#0(0"0(0#0#60"/Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c8611842528#2039"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/minizip/mztools.c -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/mztools.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/unzip.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c normal i386 c com.apple.compilers.gcc.4_2
+s321261755.762975
+e321261756.202344
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/unzip.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c321261755#321261756#0(0"0(0#0#58"/Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c8611396832#2035"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/minizip/unzip.c -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/unzip.o0#
+
+CCompileC build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/zip.o /Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c normal i386 c com.apple.compilers.gcc.4_2
+s321261755.764647
+e321261756.201056
+r1
+xCompileC
+xbuild/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/zip.o
+x/Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c321261755#321261756#0(0"0(0#0#56"/Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c8611268032#2031"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-generated-files.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-own-target-headers.hmap -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-all-target-headers.hmap -iquote /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/StressCheck-project-headers.hmap -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -I/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/include -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources/i386 -I/Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/DerivedSources -DDEBUG -DSTRESS_CHECK -include /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch -c /Users/richard/OfficeHarmony/SourceCode1.3/minizip/zip.c -o /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/zip.o0#
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/ContactUsController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/DetailedResponseViewController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/GeneralResponseViewController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/HomeViewController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/MindCell.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/MovementCell.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/MovementDetailViewController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/QuizViewController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/ResponseHistoryViewController.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/StressCheck/MainWindow.xib
+r0
+
+CCompileXIB /Users/richard/OfficeHarmony/SourceCode1.3/VideoStressViewController.xib
+r0
+
+CCopyPlistFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Entitlements.plist Entitlements.plist
+r0
+
+CCopyStringsFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/en.lproj/Localizable.strings en.lproj/Localizable.strings
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/BrushedMetalBack.png BrushedMetalBack.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/BrushedMetalBack@2x.png BrushedMetalBack@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/Button.png Button.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/Button@2x.png Button@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/Default.png StressCheck/Default.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/Default@2x.png StressCheck/Default@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Mind_splash.png StressCheck/OH_Mind_splash.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Mind_splash@2x.png StressCheck/OH_Mind_splash@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Movement_splash.png StressCheck/OH_Movement_splash.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_Movement_splash@2x.png StressCheck/OH_Movement_splash@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_contact.jpg StressCheck/OH_bkg_contact.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_full.png OH_bkg_full.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_greenshine.jpg OH_bkg_greenshine.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_bkg_purpleshine.jpg OH_bkg_purpleshine.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_checkboxOFF.png OH_butt_checkboxOFF.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_checkboxON.png OH_butt_checkboxON.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_contactman.png OH_butt_contactman.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_contacturl.png OH_butt_contacturl.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download.png StressCheck/OH_butt_download.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Mind.png StressCheck/OH_butt_download_Mind.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Mind@2x.png StressCheck/OH_butt_download_Mind@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Movement.png StressCheck/OH_butt_download_Movement.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_download_Movement@2x.png StressCheck/OH_butt_download_Movement@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_page_restart.png OH_butt_page_restart.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_playvid.png OH_butt_playvid.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back.png OH_butt_top_back.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back_green.png OH_butt_top_back_green.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_back_purple.png OH_butt_top_back_purple.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_godeeper_larger01.png OH_butt_top_godeeper_larger01.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_butt_top_indepth.png OH_butt_top_indepth.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_homeimage.png OH_homeimage.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_icon_stress_57x57_03.png StressCheck/OH_icon_stress_57x57_03.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_beach.jpg OH_image_audio_beach.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_burden.jpg OH_image_audio_burden.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_leavework.jpg OH_image_audio_leavework.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_audio_meadow.jpg OH_image_audio_meadow.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_bullbear.jpg OH_image_video_bullbear.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_coffee.jpg OH_image_video_coffee.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_detox.jpg OH_image_video_detox.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_headache.jpg OH_image_video_headache.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_kickshoes.jpg OH_image_video_kickshoes.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_image_video_sun.jpg OH_image_video_sun.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_minddetailarrow.jpg OH_minddetailarrow.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_navbar.png OH_navbar.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_navbar_head.png OH_navbar_head.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_navbar_purple.png OH_navbar_purple.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_contact.png OH_tabicon_contact.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_home.png OH_tabicon_home.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_mind.png OH_tabicon_mind.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_movement.png OH_tabicon_movement.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_tabicon_stresstest.png OH_tabicon_stresstest.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_bullbear.jpg OH_thumb_OH_image_video_bullbear.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_coffee.jpg OH_thumb_OH_image_video_coffee.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_detox.jpg OH_thumb_OH_image_video_detox.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_headache.jpg OH_thumb_OH_image_video_headache.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_kickshoes.jpg OH_thumb_OH_image_video_kickshoes.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OH_thumb_OH_image_video_sun.jpg OH_thumb_OH_image_video_sun.jpg
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/OfficeHarmony115.rdb OfficeHarmony115.rdb
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_check.png banner_brushed_stress_check.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_check@2x.png banner_brushed_stress_check@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_domains.png banner_brushed_stress_domains.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_domains@2x.png banner_brushed_stress_domains@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_tracker.png banner_brushed_stress_tracker.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/banner_brushed_stress_tracker@2x.png banner_brushed_stress_tracker@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/contact.png contact.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/contact@2x.png contact@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/email_button.png email_button.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/email_button@2x.png email_button@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/icon.png StressCheck/icon.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/icon@2x.png StressCheck/icon@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/metal_bar.png metal_bar.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/metal_bar@2x.png metal_bar@2x.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/phone_button.png phone_button.png
+r0
+
+CCpResource build/Debug-iphonesimulator/StressCheck.app/phone_button@2x.png phone_button@2x.png
+r0
+
+CGenerateDSYMFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app.dSYM /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck
+s321261761.690819
+e321261762.106721
+r1
+xGenerateDSYMFile
+x/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app.dSYM
+x/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/StressCheck.app.dSYM build/Debug-iphonesimulator/StressCheck.app/StressCheck321261761#321261762#0(0"0(0#0#98"/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck28429462281650260#407"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck -o /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app.dSYM0#
+
+CLd /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck normal i386
+s321261760.028666
+e321261761.690520
+r1
+xLd
+x/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck
+xnormal
+xi386
+old: warning: duplicate dylib /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/system/libSystem.host.dylib
+lSLF07#2@103"Link /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck321261760#321261761#0(149"ld: warning: duplicate dylib /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/system/libSystem.host.dylib1(22@135"Duplicate dylib /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/system/libSystem.host.dylib321261761#0#149#0(6@0"321261761#0#0#0#0#0"0(0#0#0"8612040544#1542"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -L. -LClasses -LFlurryLibWithLocation -Lminizip -LOfficeHarmony -LOfficeHarmonyLite -LStressCheck -L/Users/richard/OfficeHarmony/SourceCode1.3/FlurryLibWithLocation -F/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator -filelist /Users/richard/OfficeHarmony/SourceCode1.3/build/OfficeHarmony.build/Debug-iphonesimulator/StressCheck.build/Objects-normal/i386/StressCheck.LinkFileList -mmacosx-version-min=10.6 -weak_library /usr/lib/libSystem.B.dylib -all_load -weak_framework UIKit -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -framework SystemConfiguration -framework MediaPlayer -framework AudioToolbox -framework AVFoundation -framework QuartzCore -lsqlite3.0 -framework CoreLocation -framework AddressBook -framework MessageUI -framework StoreKit -lz.1.2.3 -lFlurryWithLocation -weak_framework iAd -weak_framework CoreTelephony -framework MobileCoreServices -o /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/StressCheck0#
+
+CProcessInfoPlistFile /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app/Info.plist StressCheck-Info.plist
+r0
+
+CProcessPCH /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-ahrcktnndgjousgvfpwlhhhglmfn/OfficeHarmony_Prefix.pch.gch OfficeHarmony_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/Pq/PqFKi9BuFnSLvbIuUq3cOE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfficeHarmony_Prefix-cnmnmwqofrvqkrfmdcikopgigajl/OfficeHarmony_Prefix.pch.gch OfficeHarmony_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+r0
+
+CTouch /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app
+s321261762.106823
+e321261762.193537
+r1
+xTouch
+x/Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app
+lSLF07#2@92"Touch /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app321261762#321261762#0(0"0(0#0#0"8608169088#290"    cd /Users/richard/OfficeHarmony/SourceCode1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/richard/OfficeHarmony/SourceCode1.3/build/Debug-iphonesimulator/StressCheck.app0#
+

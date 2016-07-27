@@ -1,0 +1,38 @@
+//
+//  SurveyProofViewController.h
+//  SurveyProof
+//
+//  Created by Bret Cowie on 7/7/09.
+//  Copyright AVAI 2009. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "Question.h"
+#import "GeneralResponseViewController.h"
+#import "SQLQuery.h"
+#import "Constants.h"
+
+@interface QuizViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+	NSMutableArray *_questions;
+	Question *_currentQuestion;
+	UITableView *_questionTable;
+	int _numQuestions;
+	int _questionIndex;
+	BOOL wait;
+}
+
+@property(nonatomic, retain) NSMutableArray *questions;
+@property(nonatomic, retain) Question *currentQuestion;
+@property (nonatomic, retain) IBOutlet UITableView *questionTable;
+@property int numQuestions;
+@property int questionIndex;
+
+-(void) loadQuestionWithAnimation:(UIViewAnimationTransition) animationTransition;
+- (void) getCurrentQuizQuestion;
+-(IBAction) restartButtonTouch:(id)sender;
+-(void) nextQuestion:(NSTimer *)theTimer;
+
+-(void) loadGeneralResponse;
+
+@end
+

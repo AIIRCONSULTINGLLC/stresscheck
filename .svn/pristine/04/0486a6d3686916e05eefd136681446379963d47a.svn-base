@@ -1,0 +1,227 @@
+//
+//  GeneralResponseViewController.m
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/30/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "GeneralResponseViewController.h"
+
+
+@implementation GeneralResponseViewController
+
+@synthesize responseLabel = _responseLabel;
+@synthesize generalScore = _generalScore;
+@synthesize detailPrefix = _detailPrefix;
+@synthesize yourScoreIsLabel = _yourScoreIsLabel;
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	NSLog(@"Loading general response view");
+    [super viewDidLoad];
+
+	//Compute total stress score
+	NSString *sql = @"SELECT SUM(Answers.pointValue) FROM Questions ";
+	sql = [sql stringByAppendingString:@"JOIN QuestionAnswer ON QuestionAnswer.questionId = Questions.id "];
+	sql = [sql stringByAppendingString:@"JOIN Answers ON QuestionAnswer.answerId = Answers.id "];
+	sql = [sql stringByAppendingString:@"WHERE Questions.questionState = QuestionAnswer.displayOrder "];
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		self.generalScore =  [NSNumber numberWithDouble: (double)sqlite3_column_int (sqlStatement, 0)];
+	}
+	
+	// Get general response
+	sql = [NSString stringWithFormat:@"SELECT responseText, maxThreshold, detailPrefix FROM GeneralResponses WHERE %d <= maxThreshold ORDER BY maxThreshold DESC", [self.generalScore intValue]];
+	query = [[SQLQuery alloc] initWithQuery:sql];
+	NSString *generalResponseText = @"no results found";
+	while((sqlStatement = [query nextRecord]) != nil)
+	{
+		generalResponseText = [[NSString alloc] initWithCString:(char *)sqlite3_column_text(sqlStatement, 0)];
+		self.detailPrefix = [[NSString alloc] initWithCString:(char *)sqlite3_column_text(sqlStatement, 2)];
+	}
+	NSString *response = [NSString stringWithFormat:generalResponseText, [self.generalScore intValue]];
+	NSLog(response);
+	self.responseLabel.numberOfLines = 200;
+	self.responseLabel.text = response;
+	self.responseLabel.textColor = [UIColor OHDarkPurple];
+	self.responseLabel.textAlignment = UITextAlignmentCenter;
+	self.responseLabel.font = [UIFont fontWithName:@"Arial" size:15];
+/*	
+	//ADD GRAPH TITLE LABEL
+	UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 54, self.view.frame.size.width-30, 20)];
+	titleLabel.text = @"General Results";
+	titleLabel.font = [titleLabel.font fontWithSize:14];
+	titleLabel.textAlignment = UITextAlignmentRight;
+	titleLabel.backgroundColor = [UIColor clearColor];
+	titleLabel.textColor = [UIColor OHDarkPurple];
+	[self.view addSubview:titleLabel];
+	[titleLabel release];*/
+	
+	//ADD THE BAR GRAPH
+	CPTheme *theme = [CPTheme themeNamed:kCPOfficeHarmonyTheme];
+	CPXYGraph *barChart = (CPXYGraph *)[theme newGraph];
+	CPLayerHostingView *barChartView = [[CPLayerHostingView alloc] initWithFrame:CGRectMake(0,44,320,66)];
+	barChartView.hostedLayer = barChart;
+
+	barChart.paddingLeft = 15.0;
+	barChart.paddingTop = 15.0;
+	barChart.paddingRight = 15.0;
+	barChart.paddingBottom = 10.0;
+	barChart.plotArea.fill = [CPFill fillWithColor:[CPColor CPLightGray]];
+	
+	CPXYPlotSpace *plotSpace = (CPXYPlotSpace *)barChart.defaultPlotSpace;
+    plotSpace.yRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(1.0f)];
+    plotSpace.xRange = [CPPlotRange plotRangeWithLocation:CPDecimalFromFloat(0.0f) length:CPDecimalFromFloat(100.0f)];
+	
+	CPLineStyle *majorLineStyle = [CPLineStyle lineStyle];
+    majorLineStyle.lineCap = kCGLineCapButt;
+    majorLineStyle.lineColor = [CPColor CPDarkPurple];
+    majorLineStyle.lineWidth = 2.0f;
+	
+	CPXYAxisSet *axisSet = (CPXYAxisSet *)barChart.axisSet;
+    CPXYAxis *x = axisSet.xAxis;
+    x.majorIntervalLength = [NSDecimalNumber decimalNumberWithString:@"20"];
+	x.constantCoordinateValue = [NSDecimalNumber decimalNumberWithString:@"0"];
+    x.minorTicksPerInterval = 2;
+	x.axisLabelingPolicy = CPAxisLabelingPolicyAdHoc;
+	x.axisLineStyle = majorLineStyle;
+
+	CPXYAxis *y = axisSet.yAxis;
+    y.majorIntervalLength = [NSDecimalNumber decimalNumberWithString:@"20"];
+	y.constantCoordinateValue = [NSDecimalNumber decimalNumberWithString:@"0"];
+	y.minorTicksPerInterval = 2;
+	y.axisLabelingPolicy = CPAxisLabelingPolicyAdHoc;
+	y.axisLineStyle = majorLineStyle;
+
+	CPLineStyle *barBorderStyle = [CPLineStyle lineStyle];
+	barBorderStyle.lineWidth = 0.0f;
+	
+	CPBarPlot *backgroundPlot = [CPBarPlot tubularBarPlotWithColor:[CPColor blueColor] horizontalBars:YES];
+    backgroundPlot.dataSource = self;
+    backgroundPlot.baseValue = [NSDecimalNumber decimalNumberWithString:@"0"];
+    backgroundPlot.barOffset = 1.0f;
+	backgroundPlot.cornerRadius = 0.0f;
+	backgroundPlot.barWidth = 20.0f;
+	backgroundPlot.lineStyle = barBorderStyle;
+	backgroundPlot.identifier = @"background";
+    [barChart addPlot:backgroundPlot toPlotSpace:plotSpace];
+	
+	CPBarPlot *scorePlot = [CPBarPlot tubularBarPlotWithColor:[CPColor blueColor] horizontalBars:YES];
+    scorePlot.dataSource = self;
+    scorePlot.baseValue = [NSDecimalNumber decimalNumberWithString:@"0"];
+    scorePlot.barOffset = 1.0f;
+	scorePlot.cornerRadius = 0.0f;
+	scorePlot.barWidth = 20.0f;
+	scorePlot.lineStyle = barBorderStyle;
+	scorePlot.identifier = @"score";
+    [barChart addPlot:scorePlot toPlotSpace:plotSpace];
+
+	[self.view addSubview:barChartView];
+	
+	//ADD THE FRACTION LABEL
+	UILabel *fractionLabel = [[UILabel alloc] initWithFrame:CGRectMake(240, 65, 60, 30)];
+	fractionLabel.font = [UIFont boldSystemFontOfSize:16];
+	fractionLabel.textColor = [UIColor blackColor];
+	fractionLabel.backgroundColor = [UIColor clearColor];
+	fractionLabel.textAlignment = UITextAlignmentRight;
+	fractionLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	fractionLabel.text = [NSString stringWithFormat:@"%d/100", [self.generalScore intValue]];
+	[self.view addSubview:fractionLabel];
+	[fractionLabel release];
+	
+	//SET THE "Your score is..." LABEL
+	self.yourScoreIsLabel.text = [@"Your score is " stringByAppendingFormat:@"%d.", [self.generalScore intValue]];
+	self.yourScoreIsLabel.textColor = [UIColor OHDarkPurple];
+	self.yourScoreIsLabel.font = [UIFont fontWithName:@"Arial" size:24];
+}
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
+- (void)dealloc {
+	[self.responseLabel release];
+	[self.generalScore release];
+	[self.detailPrefix release];
+	[self.yourScoreIsLabel release];
+    [super dealloc];
+}
+
+-(IBAction) detailedResponseButtonTouch:(id) sender
+{
+	NSLog(@"detailedResponseButtonTouch");
+	DetailedResponseViewController *detailedResponse = [[DetailedResponseViewController alloc] initWithNibName:@"DetailedResponseViewController" bundle:[NSBundle mainBundle]];
+	detailedResponse.detailPrefix = self.detailPrefix;
+	[self.navigationController pushViewController:detailedResponse animated:YES];
+	[detailedResponse release];
+}
+
+-(IBAction) restartButtonTouch:(id)sender
+{
+	//Reset all the previously selected choices
+	NSString *sql = [NSString stringWithFormat:@"UPDATE Questions SET questionState=0"];
+	SQLQuery *query = [[SQLQuery alloc] initWithQuery:sql];
+	sqlite3_stmt *sqlStatement;
+	while((sqlStatement = [query nextRecord]) != nil);
+	[query release];	
+	
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark CPPlotDataSource methods
+
+-(NSUInteger)numberOfRecordsForPlot:(CPPlot *)plot
+{
+	return 1;
+}
+
+-(NSNumber *)numberForPlot:(CPPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index
+{
+	if([plot.identifier isEqual:@"score"])
+	{
+		NSLog(@"generalScore: %d", [self.generalScore intValue]);
+		return self.generalScore;
+	}
+		NSLog(@"background");
+	return [NSNumber numberWithInt:100];
+}
+
+-(CPFill *)barFillForBarPlot:(CPBarPlot *)barPlot recordIndex:(NSUInteger)index
+{
+	if([barPlot.identifier isEqual:@"score"])
+	   return [[CPFill alloc] initWithColor:[CPColor colorWithComponentRed:133.0/255.0 green:103.0/255.0 blue:164.0/255.0 alpha:1.0]];
+	return [[CPFill alloc] initWithColor:[CPColor colorWithComponentRed:211.0/255.0 green:139.0/255.0 blue:103.0/255.0 alpha:1.0]];
+}
+
+
+@end

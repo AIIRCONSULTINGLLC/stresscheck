@@ -1,0 +1,175 @@
+//
+//  HomeViewController.m
+//  Malibu
+//
+//  Created by Richard McClellan on 6/18/09.
+//  Copyright 2009 AVAI. All rights reserved.
+//
+
+#import "HomeViewController.h"
+
+@implementation HomeViewController
+
+@synthesize twitterList = _twitterList;
+@synthesize activityIndicator = _activityIndicator;
+@synthesize scrollView = _scrollView;
+@synthesize imageView = _imageView;
+@synthesize twitterWebView = _twitterWebView;
+@synthesize twitterHtml = _twitterHtml;
+
+-(void)twitterReaderDidFinishReadingTwitter:(NSArray *)twitter
+{
+	self.twitterList = twitter;
+	[self performSelectorOnMainThread:@selector(displayTwitter) withObject:nil waitUntilDone:NO];
+}
+
+- (void) displayTwitter
+{
+	self.twitterHtml = @"<body link=\"#000000\">";
+	for(int i=0; i<[self.twitterList count]; ++i)
+	{
+		self.twitterHtml = [self.twitterHtml stringByAppendingString:@"<p style=\"font-family:helvetica;font-size:14;color:black\">"];
+		NSString *tweet = [[self.twitterList objectAtIndex:i] title];
+		NSString *clickableUsername = [NSString stringWithFormat:@"<a href=\"http://twitter.com/%@\">%@</a>", kTwitterUsername, kTwitterUsername];
+		tweet = [tweet stringByReplacingCharactersInRange:[tweet rangeOfString:kTwitterUsername] withString:clickableUsername];
+		self.twitterHtml = [self.twitterHtml stringByAppendingString:tweet];
+		self.twitterHtml = [self.twitterHtml stringByAppendingString:@"</p>"];
+		self.twitterHtml = [self.twitterHtml stringByAppendingString:@"<hr style=\"color:blue;\">"];
+	}
+	self.twitterHtml = [self.twitterHtml stringByAppendingString:@"</body>"];
+	NSLog(@"final html: %@", self.twitterHtml);
+	[self.twitterWebView loadHTMLString:self.twitterHtml baseURL:nil];
+	self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	[self.activityIndicator stopAnimating];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+-(void)getTwitterData
+{
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
+	TwitterReader *reader = [[TwitterReader alloc] init];
+	reader.delegate = self;
+	NSString *twitterFeedAddress = [NSString stringWithFormat:@"https://twitter.com/statuses/user_timeline/"];
+	twitterFeedAddress = [twitterFeedAddress stringByAppendingString:kTwitterUsername];
+	twitterFeedAddress = [twitterFeedAddress stringByAppendingString:@".rss"];
+	[reader parseTwitterAtURL:[NSURL URLWithString:twitterFeedAddress]];
+	[reader release];
+	[pool release];
+}
+
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+	if([prefs objectForKey:@"notFirstLaunch"] == nil)
+	{
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kDisclaimerTitle message:kDisclaimerDescription delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+		[alert addButtonWithTitle:@"Exit App"];
+		[alert addButtonWithTitle:@"I agree"];
+		[alert show];
+		[alert release];
+	}
+	
+	self.view.backgroundColor = [UIColor clearColor];
+	self.twitterWebView.backgroundColor = [UIColor clearColor];
+	self.twitterWebView.opaque = NO;
+	self.twitterWebView.dataDetectorTypes = UIDataDetectorTypeAll;
+	self.twitterWebView.delegate = self;
+	[[Reachability sharedReachability] setHostName:@"www.apple.com"];
+	NetworkStatus networkConnectionStatus = [[Reachability sharedReachability] remoteHostStatus];
+	if(networkConnectionStatus != NotReachable)
+	{
+		[self.activityIndicator startAnimating];
+		[NSThread detachNewThreadSelector:@selector(getTwitterData) toTarget:self withObject:nil];
+	}
+	else
+	{
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kNoConnectivityErrorTitle message:kNoConnectivityErrorDescription delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+	[super viewDidLoad];
+} 
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	NSLog(@"AlertDidDismissWithButtonIndex: %d", buttonIndex);
+	if([alertView.title isEqualToString:kDisclaimerTitle])
+	{
+		if(buttonIndex == 0)
+		{
+			exit(0);
+		}
+		else
+		{
+			NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+			[prefs setObject:@"" forKey:@"notFirstLaunch"];
+		}
+	}
+}
+/*
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ NSLog(@"HomeViewController: shouldAutorotateToInterfaceOrientation");
+ return YES;
+ }*/
+
+- (void)didReceiveMemoryWarning {
+	NSLog(@"HomeViewController didReceiveMemoryWarning");
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+	[self.twitterList release];
+	[self.activityIndicator release];
+	[self.scrollView release];
+	[self.twitterWebView release];
+	[self.imageView release];
+	[self.twitterHtml release];
+    [super dealloc];
+}
+
+#pragma mark -
+#pragma mark UIWebViewDelegate methods
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+	NSLog(@"did start loading webview with type: %d", navigationType);
+	if(navigationType == UIWebViewNavigationTypeLinkClicked)
+	{
+		[[UIApplication sharedApplication] openURL:request.URL];
+		return NO;
+	}
+	return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+	CGSize size = [self.twitterWebView sizeThatFits:CGSizeMake(320,1000)];
+	NSLog(@"%f %f", size.width, size.height);
+	NSLog(@"%f %f", self.twitterWebView.frame.size.width, self.twitterWebView.frame.size.height);
+	[self.twitterWebView sizeToFit];
+	
+	NSLog(@"%f %f", self.twitterWebView.frame.size.width, self.twitterWebView.frame.size.height);
+	self.scrollView.contentSize = CGSizeMake(320, self.twitterWebView.frame.size.height+217);
+}
+
+@end

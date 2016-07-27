@@ -1,0 +1,36 @@
+//
+//  DetailResponseViewController.h
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/30/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SQLQuery.h"
+#import "QuizViewController.h"
+#import "CorePlot-CocoaTouch.h"
+#import "UILabel2.h"
+#include "Constants.h"
+
+@interface DetailedResponseViewController : UIViewController <CPBarPlotDataSource> {
+	NSMutableArray *_domainNames;
+	NSMutableArray *_domainScores;
+	UILabel2 *_responseLabel;
+	UIScrollView *_scrollView;
+	NSString *_detailPrefix;
+
+}
+
+
+@property (nonatomic, retain) NSMutableArray *domainNames;
+@property (nonatomic, retain) NSMutableArray *domainScores;
+@property (nonatomic, retain) IBOutlet UILabel2 *responseLabel;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) NSString *detailPrefix;
+
+
+-(IBAction) generalResponseButtonTouch:(id) sender;
+-(IBAction) restartButtonTouch:(id)sender;
+
+@end

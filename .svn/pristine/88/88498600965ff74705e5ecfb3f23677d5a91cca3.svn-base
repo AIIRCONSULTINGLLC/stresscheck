@@ -1,0 +1,31 @@
+//
+//  DetailResponseViewController.h
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/30/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SQLQuery.h"
+#import "DetailedResponseViewController.h"
+#import "CorePlot-CocoaTouch.h"
+
+@class	QuizViewController;
+
+@interface GeneralResponseViewController : UIViewController <CPPlotDataSource> {
+	UILabel *_responseLabel;
+	NSNumber *_generalScore;
+	NSString *_detailPrefix;
+	UILabel *_yourScoreIsLabel;
+}
+
+@property (nonatomic, retain) IBOutlet UILabel *responseLabel;
+@property (nonatomic, retain) NSNumber *generalScore;
+@property (nonatomic, retain) NSString *detailPrefix;
+@property (nonatomic, retain) IBOutlet UILabel *yourScoreIsLabel;
+
+-(IBAction) detailedResponseButtonTouch:(id) sender;
+-(IBAction) restartButtonTouch:(id)sender;
+
+@end

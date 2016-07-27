@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC8E2801A11122E00E17241 /* vid_comp_bullsAndBears.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8E27A1A11122E00E17241 /* vid_comp_bullsAndBears.m4v */; };
+		8DC8E2811A11122E00E17241 /* vid_comp_coffeeBreak.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8E27B1A11122E00E17241 /* vid_comp_coffeeBreak.m4v */; };
+		8DC8E2821A11122E00E17241 /* vid_comp_headache.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8E27C1A11122E00E17241 /* vid_comp_headache.m4v */; };
+		8DC8E2831A11122E00E17241 /* vid_comp_kickOffYourShoes.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8E27D1A11122E00E17241 /* vid_comp_kickOffYourShoes.m4v */; };
+		8DC8E2841A11122E00E17241 /* vid_comp_seatedSunSalutation.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8E27E1A11122E00E17241 /* vid_comp_seatedSunSalutation.m4v */; };
+		8DC8E2851A11122E00E17241 /* vid_orig_endOfDayDetox.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8E27F1A11122E00E17241 /* vid_orig_endOfDayDetox.m4v */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8DC8E2701A11121E00E17241 /* movement */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = movement; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC8E2741A11121E00E17241 /* ContentInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContentInfo.plist; sourceTree = "<group>"; };
+		8DC8E27A1A11122E00E17241 /* vid_comp_bullsAndBears.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_comp_bullsAndBears.m4v; sourceTree = "<group>"; };
+		8DC8E27B1A11122E00E17241 /* vid_comp_coffeeBreak.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_comp_coffeeBreak.m4v; sourceTree = "<group>"; };
+		8DC8E27C1A11122E00E17241 /* vid_comp_headache.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_comp_headache.m4v; sourceTree = "<group>"; };
+		8DC8E27D1A11122E00E17241 /* vid_comp_kickOffYourShoes.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_comp_kickOffYourShoes.m4v; sourceTree = "<group>"; };
+		8DC8E27E1A11122E00E17241 /* vid_comp_seatedSunSalutation.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_comp_seatedSunSalutation.m4v; sourceTree = "<group>"; };
+		8DC8E27F1A11122E00E17241 /* vid_orig_endOfDayDetox.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid_orig_endOfDayDetox.m4v; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8DC8E2691A11121E00E17241 = {
+			isa = PBXGroup;
+			children = (
+				8DC8E2721A11121E00E17241 /* movement */,
+				8DC8E2711A11121E00E17241 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DC8E2711A11121E00E17241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC8E2701A11121E00E17241 /* movement */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DC8E2721A11121E00E17241 /* movement */ = {
+			isa = PBXGroup;
+			children = (
+				8DC8E2731A11121E00E17241 /* Supporting Files */,
+			);
+			path = movement;
+			sourceTree = "<group>";
+		};
+		8DC8E2731A11121E00E17241 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DC8E27A1A11122E00E17241 /* vid_comp_bullsAndBears.m4v */,
+				8DC8E27B1A11122E00E17241 /* vid_comp_coffeeBreak.m4v */,
+				8DC8E27C1A11122E00E17241 /* vid_comp_headache.m4v */,
+				8DC8E27D1A11122E00E17241 /* vid_comp_kickOffYourShoes.m4v */,
+				8DC8E27E1A11122E00E17241 /* vid_comp_seatedSunSalutation.m4v */,
+				8DC8E27F1A11122E00E17241 /* vid_orig_endOfDayDetox.m4v */,
+				8DC8E2741A11121E00E17241 /* ContentInfo.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DC8E26F1A11121E00E17241 /* movement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DC8E2771A11121E00E17241 /* Build configuration list for PBXNativeTarget "movement" */;
+			buildPhases = (
+				8DC8E26E1A11121E00E17241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = movement;
+			productName = movement;
+			productReference = 8DC8E2701A11121E00E17241 /* movement */;
+			productType = "com.apple.product-type.in-app-purchase-content";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DC8E26A1A11121E00E17241 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = louistar;
+			};
+			buildConfigurationList = 8DC8E26D1A11121E00E17241 /* Build configuration list for PBXProject "movement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8DC8E2691A11121E00E17241;
+			productRefGroup = 8DC8E2711A11121E00E17241 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC8E26F1A11121E00E17241 /* movement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC8E26E1A11121E00E17241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC8E2831A11122E00E17241 /* vid_comp_kickOffYourShoes.m4v in Resources */,
+				8DC8E2851A11122E00E17241 /* vid_orig_endOfDayDetox.m4v in Resources */,
+				8DC8E2811A11122E00E17241 /* vid_comp_coffeeBreak.m4v in Resources */,
+				8DC8E2841A11122E00E17241 /* vid_comp_seatedSunSalutation.m4v in Resources */,
+				8DC8E2821A11122E00E17241 /* vid_comp_headache.m4v in Resources */,
+				8DC8E2801A11122E00E17241 /* vid_comp_bullsAndBears.m4v in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8DC8E2751A11121E00E17241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Debug;
+		};
+		8DC8E2761A11121E00E17241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		8DC8E2781A11121E00E17241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = movement/ContentInfo.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/InAppPurchaseContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = "";
+			};
+			name = Debug;
+		};
+		8DC8E2791A11121E00E17241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = movement/ContentInfo.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/InAppPurchaseContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DC8E26D1A11121E00E17241 /* Build configuration list for PBXProject "movement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC8E2751A11121E00E17241 /* Debug */,
+				8DC8E2761A11121E00E17241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DC8E2771A11121E00E17241 /* Build configuration list for PBXNativeTarget "movement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC8E2781A11121E00E17241 /* Debug */,
+				8DC8E2791A11121E00E17241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DC8E26A1A11121E00E17241 /* Project object */;
+}

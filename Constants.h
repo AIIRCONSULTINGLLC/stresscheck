@@ -1,0 +1,69 @@
+//
+//  Constants.h
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 7/23/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#ifdef OH_FULL
+#define OFFICE_HARMONY
+#endif
+
+#ifdef OH_LITE
+#define OFFICE_HARMONY
+#endif
+
+#ifdef OFFICE_HARMONY
+#define kDisclaimerTitle	@"You must agree to the following warning before using this application:"
+#define kDisclaimerDescription	@"The images, videos, text, and audio files contained in Office Harmony \
+depict exercises performed by professionals. Not all exercises are suitable for everyone, and this or \
+any exercise program may result in injury. Always consult your physician before starting an exercise \
+program. To reduce the risk of injury, never force or strain during exercise. If you experience pain, \
+discomfort, dizziness or shortness of breath, stop immediately and consult your physician. Extreme caution \
+is recommended. Improperly performing the exercises demonstrated, or performing them beyond your ability may \
+result in serious injury or death. You assume these risks when using Office Harmony. The Office Harmony \
+application is not to be construed as medical advice, diagnosis or treatment, and is not a substitute for \
+consultations with qualified health professionals who are familiar with your individual medical needs.  \
+Office Harmony is provided “as is” with all faults, and its developers make no warranties \
+or guarantees of any kind, and expressly disclaim any and all warranties of any kind or \
+nature, whether express, implied, or statutory regarding the Office Harmony \
+application, including but not limited to the accuracy, completeness, correctness, \
+timeliness or usefulness of any information or other material provided through the \
+Office Harmony application, or of reliability, non‐infringement, merchantability or \
+fitness for a particular purpose. Any and all information provided by developer under, in \
+connection with, or related to this product is provided with all faults, and the entire risk \
+as to satisfactory quality, performance, accuracy and effort is with customer."
+#endif
+
+#ifdef STRESS_CHECK
+#define kDisclaimerTitle @"You must agree to the following warning before using this application: "
+#define kDisclaimerDescription @"You acknowledge that the information in the “Stress Check” assessment tool is provided \
+“as is” for general information only. It is not intended, or to be construed, as clinical \
+advice, medical advice, diagnosis or treatment, and is not a substitute for consultations \
+with qualified health professionals who are familiar with your individual health needs. \
+The “Stress Check” assessment tool is provided “as is” with all faults, and its developers \
+make no warranties or guarantees of any kind, and expressly disclaim any and all \
+warranties of any kind or nature, whether express, implied, or statutory regarding the \
+“Stress Check” assessment tool, including but not limited to the accuracy, completeness, \
+correctness, timeliness or usefulness of any information or other material provided \
+through the “Stress Check” assessment tool, or of reliability, non‐infringement, \
+merchantability or fitness for a particular purpose. "
+#endif
+
+#define kTwitterUsername	@"OfficeHarmony"
+
+#define kNoConnectivityErrorTitle			@"No Network Connectivity"
+#define kNoConnectivityErrorDescription		@"Some features of this app require a network connection"
+#define kDatabaseName		@"OfficeHarmony115.rdb"
+
+#define OHDarkPurple colorWithRed:22.0/255.0 green:0.0/255.0 blue: 39.0/255.0 alpha:1.0
+#define CPDarkPurple colorWithComponentRed:22.0/255.0 green:0.0/255.0 blue: 39.0/255.0 alpha:1.0
+#define CPLightPurple colorWithComponentRed:211.0/255.0 green:210.0/255.0 blue: 248.0/255.0 alpha:1.0
+#define OHLightPurple  colorWithRed:211.0/255.0 green:210.0/255.0 blue: 248.0/255.0 alpha:1.0
+
+#define CPLightGray colorWithComponentRed:0.878431373 green:0.874509804 blue: 0.956862745 alpha:1.0 
+
+
+#define kMeditationId @"com.kirschner.stresscheck.meditation"
+#define kMovementId @"com.kirschner.stresscheck.movement"

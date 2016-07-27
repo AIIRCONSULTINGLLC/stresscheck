@@ -1,0 +1,115 @@
+//
+//  MovementDetailViewController.m
+//  OfficeHarmony
+//
+//  Created by Richard McClellan on 8/6/09.
+//  Copyright 2009 AVAI. All rights reserved.
+//
+
+#import "MovementDetailViewController.h"
+
+
+@implementation MovementDetailViewController
+
+@synthesize titleLabel = _titleLabel;
+@synthesize descriptionLabel = _descriptionLabel;
+@synthesize warningLabel = _warningLabel;
+@synthesize lengthLabel = _lengthLabel;
+@synthesize categoryLabel = _categoryLabel;
+@synthesize previewImage = _previewImage;
+@synthesize mViewController = _mViewController;
+@synthesize video = _video;
+
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+-(id) initWithVideo:(Video *) video
+{
+	NSLog(@"setting titlelabel to %@", video.title);
+	self.video = video;
+	return self;
+}
+
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView {
+}
+*/
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	self.titleLabel.text = self.video.title;
+	self.descriptionLabel.text = self.video.description;
+	self.warningLabel.text = self.video.warning;
+	self.lengthLabel.text = self.video.mediaLength;
+	self.categoryLabel.text = [self.video.mediaCategory uppercaseString];
+	if([self.video.title isEqualToString:@"Headache"])
+		self.descriptionLabel.frame = CGRectMake(12,230,296,94);
+	self.previewImage.image = self.video.thumbnailImage;
+	[super viewDidLoad];
+}
+
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    //return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;
+}
+*/
+
+/*
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+	[self loadOrientationDependentElements];
+}
+*/
+ 
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)viewDidUnload {
+	// Release any retained subviews of the main view.
+	// e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+	[self.titleLabel release];
+	[self.descriptionLabel release];
+	[self.warningLabel release];
+	[self.lengthLabel release];
+	[self.categoryLabel release];
+	[self.previewImage release];
+	[self.mViewController release];
+	[self.video release];
+    [super dealloc];
+}
+
+-(IBAction) playButtonPressed:(id) sender
+{
+	MyViewController *myViewController = [[MyViewController alloc] initWithNibName:@"MyViewController" bundle:[NSBundle mainBundle]];
+	self.mViewController = myViewController;
+	[myViewController release];
+	[self.mViewController initMoviePlayerWithFilePath:self.video.videoPath withExtension:@"m4v"];
+	[self.mViewController playMovie:self]; 
+}
+
+-(IBAction) backButtonTouch:(id) sender
+{
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+@end
